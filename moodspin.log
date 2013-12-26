@@ -1,0 +1,1006 @@
+2009-12-15T04:45:08-08:00 INFO (6): 'Gordienko'
+2009-12-15T04:45:08-08:00 INFO (6): User`s twitter id is 21028099
+2009-12-15T04:45:09-08:00 INFO (6): Creating new user to database Gordienko
+2009-12-15T04:45:11-08:00 INFO (6): saving image from http://a3.twimg.com/profile_images/533801733/me3_bigger.jpg
+2009-12-15T04:45:13-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'user_id' => '82584556',
+    'follow' => '1',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '628f636f1719eab1918bf6957549a990',
+    'oauth_timestamp' => '1260881113',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'sj1ELS9omgO1n9kcCIlHBzIZ%2B%2FE%3D',
+  ),
+)
+2009-12-15T04:45:13-08:00 INFO (6): >>> Following system 82584556
+2009-12-15T04:45:14-08:00 INFO (6): <<< Following result is EpiTwitterJson::__set_state(array(
+   '__resp' => 
+  EpiCurlManager::__set_state(array(
+     'key' => 'Resource id #71',
+     'epiCurl' => 
+    EpiCurl::__set_state(array(
+       'mc' => NULL,
+       'msgs' => NULL,
+       'running' => 0,
+       'execStatus' => 0,
+       'selectStatus' => NULL,
+       'sleepIncrement' => 1.1,
+       'requests' => 
+      array (
+        'Resource id #40' => NULL,
+        'Resource id #42' => NULL,
+        'Resource id #69' => NULL,
+        'Resource id #70' => NULL,
+        'Resource id #71' => NULL,
+      ),
+       'responses' => 
+      array (
+        'Resource id #40' => 
+        array (
+          'data' => 'oauth_token=21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G&oauth_token_secret=GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw&user_id=21028099&screen_name=Gordienko',
+          'code' => 200,
+          'time' => 2.204,
+          'length' => 163,
+          'type' => 'text/html; charset=UTF-8',
+        ),
+        'Resource id #42' => 
+        array (
+          'data' => '{"profile_background_image_url":"http://s.twimg.com/a/1260307830/images/themes/theme15/bg.png","description":"","verified":false,"profile_link_color":"0084B4","status":{"favorited":false,"in_reply_to_user_id":null,"in_reply_to_status_id":null,"in_reply_to_screen_name":null,"source":"<a href=\\"http://www.linkedin.com/\\" rel=\\"nofollow\\">LinkedIn Status</a>","truncated":false,"id":5972301943,"text":"J2EE+JSP+Spring+Hibernate","created_at":"Mon Nov 23 09:24:05 +0000 2009"},"profile_background_tile":false,"geo_enabled":false,"profile_background_color":"022330","following":false,"statuses_count":5,"profile_sidebar_fill_color":"C0DFEC","followers_count":4,"time_zone":null,"profile_sidebar_border_color":"a8c7f7","protected":true,"url":null,"friends_count":5,"profile_image_url":"http://a3.twimg.com/profile_images/533801733/me3_normal.jpg","location":"Dnipropetrovs\'k, Ukraine","name":"Dmitry","id":21028099,"notifications":false,"utc_offset":null,"favourites_count":0,"created_at":"Mon Feb 16 21:08:25 +0000 2009","profile_text_color":"333333","screen_name":"Gordienko"}',
+          'code' => 200,
+          'time' => 0.531,
+          'length' => 1074,
+          'type' => 'application/json; charset=utf-8',
+        ),
+        'Resource id #69' => 
+        array (
+          'data' => '[86919397,17513080,17477447,14257813,18925079]',
+          'code' => 200,
+          'time' => 0.546,
+          'length' => 46,
+          'type' => 'application/json; charset=utf-8',
+        ),
+        'Resource id #70' => 
+        array (
+          'data' => '<?xml version="1.0" encoding="UTF-8"?>
+<user>
+  <id>82584556</id>
+  <name>ntst12</name>
+  <screen_name>ntst12</screen_name>
+  <location></location>
+  <description></description>
+  <profile_image_url>http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg</profile_image_url>
+  <url></url>
+  <protected>false</protected>
+  <followers_count>16</followers_count>
+  <profile_background_color>9ae4e8</profile_background_color>
+  <profile_text_color>000000</profile_text_color>
+  <profile_link_color>0000ff</profile_link_color>
+  <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+  <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+  <friends_count>9</friends_count>
+  <created_at>Thu Oct 15 10:13:28 +0000 2009</created_at>
+  <favourites_count>0</favourites_count>
+  <utc_offset></utc_offset>
+  <time_zone></time_zone>
+  <profile_background_image_url>http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png</profile_background_image_url>
+  <profile_background_tile>false</profile_background_tile>
+  <notifications></notifications>
+  <geo_enabled>false</geo_enabled>
+  <verified>false</verified>
+  <following></following>
+  <statuses_count>36</statuses_count>
+  <status>
+    <created_at>Mon Nov 02 12:22:53 +0000 2009</created_at>
+    <id>5361724578</id>
+    <text>I\'m in a good mood http://moodspin.com/ntst12</text>
+    <source>&lt;a href=&quot;http://www.moodspin.com&quot; rel=&quot;nofollow&quot;&gt;moodspin&lt;/a&gt;</source>
+    <truncated>false</truncated>
+    <in_reply_to_status_id></in_reply_to_status_id>
+    <in_reply_to_user_id></in_reply_to_user_id>
+    <favorited>false</favorited>
+    <in_reply_to_screen_name></in_reply_to_screen_name>
+    <geo/>
+  </status>
+</user>
+',
+          'code' => 200,
+          'time' => 0.594,
+          'length' => 1738,
+          'type' => 'application/xml; charset=utf-8',
+        ),
+        'Resource id #71' => 
+        array (
+          'data' => '{"profile_background_image_url":"http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png","description":"","profile_link_color":"0000ff","status":{"favorited":false,"in_reply_to_user_id":null,"in_reply_to_status_id":null,"in_reply_to_screen_name":null,"source":"<a href=\\"http://www.moodspin.com\\" rel=\\"nofollow\\">moodspin</a>","truncated":false,"id":5361724578,"text":"I\'m in a good mood http://moodspin.com/ntst12","created_at":"Mon Nov 02 12:22:53 +0000 2009"},"profile_background_tile":false,"statuses_count":36,"geo_enabled":false,"profile_background_color":"9ae4e8","following":true,"followers_count":17,"profile_sidebar_fill_color":"e0ff92","friends_count":9,"time_zone":null,"profile_sidebar_border_color":"87bc44","protected":false,"url":null,"notifications":false,"favourites_count":0,"profile_image_url":"http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg","location":"","name":"ntst12","id":82584556,"verified":false,"utc_offset":null,"created_at":"Thu Oct 15 10:13:28 +0000 2009","profile_text_color":"000000","screen_name":"ntst12"}',
+          'code' => 200,
+          'time' => 1,
+          'length' => 1078,
+          'type' => 'application/json; charset=utf-8',
+        ),
+      ),
+       'properties' => 
+      array (
+        'code' => 2097154,
+        'time' => 3145731,
+        'length' => 3145743,
+        'type' => 1048594,
+      ),
+    )),
+  )),
+   '__auth' => 'oauth',
+   'status' => 
+  stdClass::__set_state(array(
+     'favorited' => false,
+     'in_reply_to_user_id' => NULL,
+     'in_reply_to_status_id' => NULL,
+     'in_reply_to_screen_name' => NULL,
+     'source' => '<a href="http://www.moodspin.com" rel="nofollow">moodspin</a>',
+     'truncated' => false,
+     'id' => 5361724578,
+     'text' => 'I\'m in a good mood http://moodspin.com/ntst12',
+     'created_at' => 'Mon Nov 02 12:22:53 +0000 2009',
+  )),
+   'responseText' => '{"profile_background_image_url":"http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png","description":"","profile_link_color":"0000ff","status":{"favorited":false,"in_reply_to_user_id":null,"in_reply_to_status_id":null,"in_reply_to_screen_name":null,"source":"<a href=\\"http://www.moodspin.com\\" rel=\\"nofollow\\">moodspin</a>","truncated":false,"id":5361724578,"text":"I\'m in a good mood http://moodspin.com/ntst12","created_at":"Mon Nov 02 12:22:53 +0000 2009"},"profile_background_tile":false,"statuses_count":36,"geo_enabled":false,"profile_background_color":"9ae4e8","following":true,"followers_count":17,"profile_sidebar_fill_color":"e0ff92","friends_count":9,"time_zone":null,"profile_sidebar_border_color":"87bc44","protected":false,"url":null,"notifications":false,"favourites_count":0,"profile_image_url":"http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg","location":"","name":"ntst12","id":82584556,"verified":false,"utc_offset":null,"created_at":"Thu Oct 15 10:13:28 +0000 2009","profile_text_color":"000000","screen_name":"ntst12"}',
+   'code' => 200,
+   'response' => 
+  array (
+    'profile_background_image_url' => 'http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png',
+    'description' => '',
+    'profile_link_color' => '0000ff',
+    'status' => 
+    array (
+      'favorited' => false,
+      'in_reply_to_user_id' => NULL,
+      'in_reply_to_status_id' => NULL,
+      'in_reply_to_screen_name' => NULL,
+      'source' => '<a href="http://www.moodspin.com" rel="nofollow">moodspin</a>',
+      'truncated' => false,
+      'id' => 5361724578,
+      'text' => 'I\'m in a good mood http://moodspin.com/ntst12',
+      'created_at' => 'Mon Nov 02 12:22:53 +0000 2009',
+    ),
+    'profile_background_tile' => false,
+    'statuses_count' => 36,
+    'geo_enabled' => false,
+    'profile_background_color' => '9ae4e8',
+    'following' => true,
+    'followers_count' => 17,
+    'profile_sidebar_fill_color' => 'e0ff92',
+    'friends_count' => 9,
+    'time_zone' => NULL,
+    'profile_sidebar_border_color' => '87bc44',
+    'protected' => false,
+    'url' => NULL,
+    'notifications' => false,
+    'favourites_count' => 0,
+    'profile_image_url' => 'http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg',
+    'location' => '',
+    'name' => 'ntst12',
+    'id' => 82584556,
+    'verified' => false,
+    'utc_offset' => NULL,
+    'created_at' => 'Thu Oct 15 10:13:28 +0000 2009',
+    'profile_text_color' => '000000',
+    'screen_name' => 'ntst12',
+  ),
+   '__obj' => 
+  stdClass::__set_state(array(
+     'profile_background_image_url' => 'http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png',
+     'description' => '',
+     'profile_link_color' => '0000ff',
+     'status' => 
+    stdClass::__set_state(array(
+       'favorited' => false,
+       'in_reply_to_user_id' => NULL,
+       'in_reply_to_status_id' => NULL,
+       'in_reply_to_screen_name' => NULL,
+       'source' => '<a href="http://www.moodspin.com" rel="nofollow">moodspin</a>',
+       'truncated' => false,
+       'id' => 5361724578,
+       'text' => 'I\'m in a good mood http://moodspin.com/ntst12',
+       'created_at' => 'Mon Nov 02 12:22:53 +0000 2009',
+    )),
+     'profile_background_tile' => false,
+     'statuses_count' => 36,
+     'geo_enabled' => false,
+     'profile_background_color' => '9ae4e8',
+     'following' => true,
+     'followers_count' => 17,
+     'profile_sidebar_fill_color' => 'e0ff92',
+     'friends_count' => 9,
+     'time_zone' => NULL,
+     'profile_sidebar_border_color' => '87bc44',
+     'protected' => false,
+     'url' => NULL,
+     'notifications' => false,
+     'favourites_count' => 0,
+     'profile_image_url' => 'http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg',
+     'location' => '',
+     'name' => 'ntst12',
+     'id' => 82584556,
+     'verified' => false,
+     'utc_offset' => NULL,
+     'created_at' => 'Thu Oct 15 10:13:28 +0000 2009',
+     'profile_text_color' => '000000',
+     'screen_name' => 'ntst12',
+  )),
+   'profile_background_image_url' => 'http://s.twimg.com/a/1260817727/images/themes/theme1/bg.png',
+   'description' => '',
+   'profile_link_color' => '0000ff',
+   'profile_background_tile' => false,
+   'statuses_count' => 36,
+   'geo_enabled' => false,
+   'profile_background_color' => '9ae4e8',
+   'following' => true,
+   'followers_count' => 17,
+   'profile_sidebar_fill_color' => 'e0ff92',
+   'friends_count' => 9,
+   'time_zone' => NULL,
+   'profile_sidebar_border_color' => '87bc44',
+   'protected' => false,
+   'url' => NULL,
+   'notifications' => false,
+   'favourites_count' => 0,
+   'profile_image_url' => 'http://a3.twimg.com/profile_images/504354631/___moodspin___ntst12_normal.jpeg',
+   'location' => '',
+   'name' => 'ntst12',
+   'id' => 82584556,
+   'verified' => false,
+   'utc_offset' => NULL,
+   'created_at' => 'Thu Oct 15 10:13:28 +0000 2009',
+   'profile_text_color' => '000000',
+   'screen_name' => 'ntst12',
+))
+2009-12-15T04:45:14-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T04:45:15-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'id' => '21028099',
+     'name' => 'Dmitry',
+     'screen_name' => 'Gordienko',
+     'location' => 'Dnipropetrovs\'k, Ukraine',
+     'description' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'profile_image_url' => 'http://a3.twimg.com/profile_images/533801733/me3_normal.jpg',
+     'url' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'protected' => 'true',
+     'followers_count' => '4',
+     'profile_background_color' => '022330',
+     'profile_text_color' => '333333',
+     'profile_link_color' => '0084B4',
+     'profile_sidebar_fill_color' => 'C0DFEC',
+     'profile_sidebar_border_color' => 'a8c7f7',
+     'friends_count' => '6',
+     'created_at' => 'Mon Feb 16 21:08:25 +0000 2009',
+     'favourites_count' => '0',
+     'utc_offset' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'time_zone' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'profile_background_image_url' => 'http://s.twimg.com/a/1260307830/images/themes/theme15/bg.png',
+     'profile_background_tile' => 'false',
+     'notifications' => 'false',
+     'geo_enabled' => 'false',
+     'verified' => 'false',
+     'following' => 'false',
+     'statuses_count' => '5',
+  )),
+))
+2009-12-15T04:45:15-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T04:45:16-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'id' => '21028099',
+     'name' => 'Dmitry',
+     'screen_name' => 'Gordienko',
+     'location' => 'Dnipropetrovs\'k, Ukraine',
+     'description' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'profile_image_url' => 'http://a3.twimg.com/profile_images/533801733/me3_normal.jpg',
+     'url' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'protected' => 'true',
+     'followers_count' => '4',
+     'profile_background_color' => '022330',
+     'profile_text_color' => '333333',
+     'profile_link_color' => '0084B4',
+     'profile_sidebar_fill_color' => 'C0DFEC',
+     'profile_sidebar_border_color' => 'a8c7f7',
+     'friends_count' => '6',
+     'created_at' => 'Mon Feb 16 21:08:25 +0000 2009',
+     'favourites_count' => '0',
+     'utc_offset' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'time_zone' => 
+    SimpleXMLElement::__set_state(array(
+    )),
+     'profile_background_image_url' => 'http://s.twimg.com/a/1260307830/images/themes/theme15/bg.png',
+     'profile_background_tile' => 'false',
+     'notifications' => 'false',
+     'geo_enabled' => 'false',
+     'verified' => 'false',
+     'following' => 'false',
+     'statuses_count' => '5',
+  )),
+))
+2009-12-15T04:45:16-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:45:16-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:45:17-08:00 INFO (6): Error EpiOAuthUnauthorizedException during login. <?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <request>/oauth/access_token</request>
+  <error>Invalid / expired Token</error>
+</hash>
+
+2009-12-15T04:45:17-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => '128733a43de2fc0670a04b8f8f102d83',
+    'oauth_timestamp' => '1260881117',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '9fE1PDlvV8Txgx7WqjerPEOZVsc%3D',
+  ),
+)
+2009-12-15T04:45:17-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => 'd073b29f62b72a19edfc7754400d59ea',
+    'oauth_timestamp' => '1260881117',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'AEOGxgPJhpo9FrWdsKAAT%2BsLgSY%3D',
+  ),
+)
+2009-12-15T04:45:17-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => 'a2add515b34779bb49bcbb41244a6430',
+    'oauth_timestamp' => '1260881117',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'jFG9HRuuTUILidaOIAkttFHpiA4%3D',
+  ),
+)
+2009-12-15T04:48:13-08:00 INFO (6): 'Gordienko'
+2009-12-15T04:48:13-08:00 INFO (6): User`s twitter id is 21028099
+2009-12-15T04:48:13-08:00 INFO (6): Updating user Gordienko in database
+2009-12-15T04:48:14-08:00 INFO (6): saving image from http://a3.twimg.com/profile_images/533801733/me3_bigger.jpg
+2009-12-15T04:48:15-08:00 INFO (6): User 21028099 already follows moodspin
+2009-12-15T04:48:15-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T04:48:16-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T04:48:16-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T04:48:17-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:17-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:18-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:18-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:25-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:25-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:25-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:25-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:47-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:47-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:47-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:48:47-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:00-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:00-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:00-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '490608d1ead0123dc4dd585c195bfe41',
+    'oauth_timestamp' => '1260881340',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'IsfrJA0Y2EjQeiHNkEanW%2F1ZIXU%3D',
+  ),
+)
+2009-12-15T04:49:00-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '8c66311570bcd435f2073dd4fcca068c',
+    'oauth_timestamp' => '1260881340',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'AbqBfUVIOaumHxYZLnsar7Ue7AQ%3D',
+  ),
+)
+2009-12-15T04:49:00-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '581357158c38a5e90d250965e8b439cd',
+    'oauth_timestamp' => '1260881340',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'VkXsxrGgUasB%2Bi6N9uBIYNLQmPc%3D',
+  ),
+)
+2009-12-15T04:49:05-08:00 INFO (6): 'Gordienko'
+2009-12-15T04:49:05-08:00 INFO (6): User`s twitter id is 21028099
+2009-12-15T04:49:05-08:00 INFO (6): Updating user Gordienko in database
+2009-12-15T04:49:06-08:00 INFO (6): saving image from http://a3.twimg.com/profile_images/533801733/me3_bigger.jpg
+2009-12-15T04:49:07-08:00 INFO (6): User 21028099 already follows moodspin
+2009-12-15T04:49:07-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T04:49:08-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T04:49:08-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T04:49:08-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T04:49:08-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:08-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:08-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:08-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:15-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:15-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T04:49:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '067769326f7f06df7b7f1f078183d0fd',
+    'oauth_timestamp' => '1260881355',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'lQ7RJkXd3JfIBsGgK%2FtJQDrMvXc%3D',
+  ),
+)
+2009-12-15T04:49:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => 'df906d54d596098e837910a8c16a0e53',
+    'oauth_timestamp' => '1260881355',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'AM7F6%2B2MvGNhycgOIsAFLpjj23g%3D',
+  ),
+)
+2009-12-15T04:49:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '9936baa6e9d43667b0a2c7242040dea1',
+    'oauth_timestamp' => '1260881355',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'j96FIIlZHGWlyZGnq%2F2ufJ%2Fe%2Bxo%3D',
+  ),
+)
+2009-12-15T04:50:11-08:00 INFO (6): Error EpiOAuthException during login. <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Temporarily Unavailable</title>
+</head><body>
+<h1>Service Temporarily Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+<p>Additionally, a 403 Forbidden
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2009-12-15T04:50:11-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => 'b60cd7d54bf0a40255ea172cc6168ef7',
+    'oauth_timestamp' => '1260881411',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '4VaVDyFiyEMsUecI1%2BHb3WoACVs%3D',
+  ),
+)
+2009-12-15T04:50:11-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => '972981ef9c22acad4800d744a1aaed17',
+    'oauth_timestamp' => '1260881411',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'g870tMUHfXprDLJNLatQEIZEhYU%3D',
+  ),
+)
+2009-12-15T04:50:11-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '',
+    'oauth_nonce' => '0e2edb0ecd41de78bfe25f42bae5a2b9',
+    'oauth_timestamp' => '1260881411',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'VMU8a5vBNn9M4iatnWcVUWLfma0%3D',
+  ),
+)
+2009-12-15T04:50:17-08:00 INFO (6): 'ntst12'
+2009-12-15T04:50:17-08:00 INFO (6): User`s twitter id is 82584556
+2009-12-15T04:50:17-08:00 INFO (6): Creating new user to database ntst12
+2009-12-15T04:50:20-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'user_id' => '82584556',
+    'follow' => '1',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '60ab52cd2b2d080d76f040ce5601bda9',
+    'oauth_timestamp' => '1260881420',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'EOT8%2B7SIDN3Vb4seEqPijVCKA9Y%3D',
+  ),
+)
+2009-12-15T04:50:20-08:00 INFO (6): >>> Following system 82584556
+2009-12-15T04:50:20-08:00 INFO (6): {"request":"/friendships/create.json","error":"Could not follow user: You can't follow yourself!"}
+2009-12-15T04:50:20-08:00 INFO (6): followingSystem : Error in Moodspin_User_Manager_Twitter::followSystem() line 186. Exception: {"request":"/friendships/create.json","error":"Could not follow user: You can't follow yourself!"}
+2009-12-15T04:50:21-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T04:50:21-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/82584556.xml',
+     'error' => 'Could not follow user: You can\'t follow yourself!',
+  )),
+))
+2009-12-15T04:50:21-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T04:50:22-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/82584556.xml',
+     'error' => 'Could not follow user: ntst12 is already on your list.',
+  )),
+))
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:22-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:23-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:23-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:27-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:27-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:27-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:27-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:42-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:42-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:42-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:50:42-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:51:46-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:51:46-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:51:46-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:51:46-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:10-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:10-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:11-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:11-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:31-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:31-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T04:52:31-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => 'ededae802a232203b4c164da31d3a253',
+    'oauth_timestamp' => '1260881551',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'vnB%2B38QDdn0CA%2FLpbVMkBOWVWY0%3D',
+  ),
+)
+2009-12-15T04:52:31-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '398d1cd1f006d687c4e39afdba361ec7',
+    'oauth_timestamp' => '1260881551',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '4SIkDQGAtGQ1YHwBZP16YHsEuwk%3D',
+  ),
+)
+2009-12-15T04:52:31-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '068aa2cc3445941c07dd65b2e88cdd17',
+    'oauth_timestamp' => '1260881551',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'B6SmFPKDYE%2Fp%2FuPdeGOZTZFcDn4%3D',
+  ),
+)
+2009-12-15T05:01:40-08:00 INFO (6): 'Gordienko'
+2009-12-15T05:01:40-08:00 INFO (6): User`s twitter id is 21028099
+2009-12-15T05:01:40-08:00 INFO (6): Updating user Gordienko in database
+2009-12-15T05:01:40-08:00 INFO (6): saving image from http://a3.twimg.com/profile_images/533801733/me3_bigger.jpg
+2009-12-15T05:01:42-08:00 INFO (6): User 21028099 already follows moodspin
+2009-12-15T05:01:42-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T05:01:42-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T05:01:42-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T05:01:43-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/21028099.xml',
+     'error' => 'Could not follow user: You\'ve already requested to follow Gordienko.',
+  )),
+))
+2009-12-15T05:01:43-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:43-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:43-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:43-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:44-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:44-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:44-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:44-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:51-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:51-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:51-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'status' => 'I%27m%20in%20a%20good%20mood%20http%3A%2F%2Fmoodspin.com%2FGordienko',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => 'ef26dfb0fa32377a393fa559cd3fa44d',
+    'oauth_timestamp' => '1260882111',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'pabTqHjfaTDc%2FcYbhJ%2FdggrNapE%3D',
+  ),
+)
+2009-12-15T05:01:51-08:00 INFO (6): Updating image from path D:\project\moodspin_trunk\moodspin\src\public\images\avatars\modified\___moodspin___Gordienko.jpeg
+2009-12-15T05:01:51-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'image' => '@D:\\project\\moodspin_trunk\\moodspin\\src\\public\\images\\avatars\\modified\\___moodspin___Gordienko.jpeg',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '88e139cc6bb8c387680728bde27e0e68',
+    'oauth_timestamp' => '1260882111',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '7KKQTF9RdxGiXewI4xFyABH8jSA%3D',
+  ),
+)
+2009-12-15T05:01:55-08:00 INFO (6): Upload result is stdClass::__set_state(array(
+   'favorited' => false,
+   'in_reply_to_user_id' => NULL,
+   'in_reply_to_status_id' => NULL,
+   'in_reply_to_screen_name' => NULL,
+   'source' => '<a href="http://moodspin.lc/" rel="nofollow">moodspin_test</a>',
+   'truncated' => false,
+   'id' => 6695177150,
+   'text' => 'I\'m in a good mood http://moodspin.com/Gordienko',
+   'created_at' => 'Tue Dec 15 13:01:43 +0000 2009',
+))
+2009-12-15T05:01:55-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'status' => 'I%27m%20in%20a%20good%20mood%20http%3A%2F%2Fmoodspin.com%2FGordienko',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => 'a006ecf6efb9712547bcae7ed3b5c0a2',
+    'oauth_timestamp' => '1260882115',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'CPAtndFqgZFyusors2an4ulzsdc%3D',
+  ),
+)
+2009-12-15T05:01:55-08:00 INFO (6): Updating image from path D:\project\moodspin_trunk\moodspin\src\public\images\avatars\modified\___moodspin___Gordienko.jpeg
+2009-12-15T05:01:55-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'image' => '@D:\\project\\moodspin_trunk\\moodspin\\src\\public\\images\\avatars\\modified\\___moodspin___Gordienko.jpeg',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '674dd826e244453efa35a2728dbb9826',
+    'oauth_timestamp' => '1260882115',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'kAaty47kBLH1xf2cO7pe603VG44%3D',
+  ),
+)
+2009-12-15T05:01:58-08:00 INFO (6): Upload result is stdClass::__set_state(array(
+   'favorited' => false,
+   'in_reply_to_user_id' => NULL,
+   'in_reply_to_status_id' => NULL,
+   'in_reply_to_screen_name' => NULL,
+   'source' => '<a href="http://moodspin.lc/" rel="nofollow">moodspin_test</a>',
+   'truncated' => false,
+   'id' => 6695177150,
+   'text' => 'I\'m in a good mood http://moodspin.com/Gordienko',
+   'created_at' => 'Tue Dec 15 13:01:43 +0000 2009',
+))
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:01:59-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:09-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:10-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:10-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:15-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:15-08:00 INFO (6): User Tokens are token : 21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G and secret :GiXab1GY0jv7T6yIOh3YrOCKuSKNBoxhv4sYPrOBjw
+2009-12-15T05:02:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => 'd1c96fab4ad8ad2d2feaeded4dee8b83',
+    'oauth_timestamp' => '1260882135',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'EesNXgoidjU6dMG%2BiNv7jCwgI7w%3D',
+  ),
+)
+2009-12-15T05:02:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '57912308cfe0c2ab99f88633cf21eee5',
+    'oauth_timestamp' => '1260882135',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'c%2FwLsK9MMnAQZ0FvYbWq9daXLOM%3D',
+  ),
+)
+2009-12-15T05:02:15-08:00 INFO (6): params are array (
+  'request' => NULL,
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '21028099-Ne3o4ESS9KPNe44yj0rur0FVHp2K2YMR7XkxF8C8G',
+    'oauth_nonce' => '1902ac7e1ec38137c05141f042b8e9d6',
+    'oauth_timestamp' => '1260882135',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '00cP%2BuREV0WhC4PSlWtSOyosbtY%3D',
+  ),
+)
+2009-12-15T05:02:42-08:00 INFO (6): 'ntst12'
+2009-12-15T05:02:42-08:00 INFO (6): User`s twitter id is 82584556
+2009-12-15T05:02:42-08:00 INFO (6): Updating user ntst12 in database
+2009-12-15T05:02:45-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'user_id' => '82584556',
+    'follow' => '1',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '78ba24d169864a87b027bf92b80748d2',
+    'oauth_timestamp' => '1260882165',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'Xx9j48nnwTn8xlc5aBcAWrbEKvM%3D',
+  ),
+)
+2009-12-15T05:02:45-08:00 INFO (6): >>> Following system 82584556
+2009-12-15T05:02:46-08:00 INFO (6): {"request":"/friendships/create.json","error":"Could not follow user: You can't follow yourself!"}
+2009-12-15T05:02:46-08:00 INFO (6): followingSystem : Error in Moodspin_User_Manager_Twitter::followSystem() line 186. Exception: {"request":"/friendships/create.json","error":"Could not follow user: You can't follow yourself!"}
+2009-12-15T05:02:46-08:00 INFO (6): create friendship systemFollowerUsername >>>
+2009-12-15T05:02:47-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/82584556.xml',
+     'error' => 'Could not follow user: You can\'t follow yourself!',
+  )),
+))
+2009-12-15T05:02:47-08:00 INFO (6): create friendship systemJoinUsername >>>
+2009-12-15T05:02:47-08:00 INFO (6): <<< Result is Zend_Rest_Client_Result::__set_state(array(
+   '_sxml' => 
+  SimpleXMLElement::__set_state(array(
+     'request' => '/friendships/create/82584556.xml',
+     'error' => 'Could not follow user: ntst12 is already on your list.',
+  )),
+))
+2009-12-15T05:02:47-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:47-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:47-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:47-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:48-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:48-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:48-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:02:48-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:24-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:24-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:24-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'status' => 'I%27m%20in%20a%20good%20mood%20http%3A%2F%2Fmoodspin.com%2Fntst12',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => 'db492f9c6499add1e505bec8386d225d',
+    'oauth_timestamp' => '1260882264',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => '1p1dhxHTV4we%2B%2FmAnLuHkx9aMEk%3D',
+  ),
+)
+2009-12-15T05:04:24-08:00 INFO (6): Updating image from path D:\project\moodspin_trunk\moodspin\src\public\images\avatars\modified\___moodspin___ntst12.jpeg
+2009-12-15T05:04:24-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'image' => '@D:\\project\\moodspin_trunk\\moodspin\\src\\public\\images\\avatars\\modified\\___moodspin___ntst12.jpeg',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '5b1d9e343899a9e29770cc44ddfc31eb',
+    'oauth_timestamp' => '1260882264',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'XIun9bktUWhEflhKqbFv9tyb4bQ%3D',
+  ),
+)
+2009-12-15T05:04:27-08:00 INFO (6): Upload result is stdClass::__set_state(array(
+   'favorited' => false,
+   'in_reply_to_user_id' => NULL,
+   'in_reply_to_status_id' => NULL,
+   'in_reply_to_screen_name' => NULL,
+   'source' => '<a href="http://moodspin.lc/" rel="nofollow">moodspin_test</a>',
+   'truncated' => false,
+   'id' => 6695233200,
+   'text' => 'I\'m in a good mood http://moodspin.com/ntst12',
+   'created_at' => 'Tue Dec 15 13:04:16 +0000 2009',
+))
+2009-12-15T05:04:27-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'status' => 'I%27m%20in%20a%20good%20mood%20http%3A%2F%2Fmoodspin.com%2Fntst12',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => '8f0cb218aebfe577d3b1266f7e61132f',
+    'oauth_timestamp' => '1260882267',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'I6%2FEN%2FSEMltGgKDgOO9uqB7hwo0%3D',
+  ),
+)
+2009-12-15T05:04:27-08:00 INFO (6): Updating image from path D:\project\moodspin_trunk\moodspin\src\public\images\avatars\modified\___moodspin___ntst12.jpeg
+2009-12-15T05:04:27-08:00 INFO (6): params are array (
+  'request' => 
+  array (
+    'image' => '@D:\\project\\moodspin_trunk\\moodspin\\src\\public\\images\\avatars\\modified\\___moodspin___ntst12.jpeg',
+  ),
+  'oauth' => 
+  array (
+    'oauth_consumer_key' => 'kFWudpTv3iUTobtKcYsq7A',
+    'oauth_token' => '82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc',
+    'oauth_nonce' => 'e84d2a7a2daa4515844287da0fecca93',
+    'oauth_timestamp' => '1260882267',
+    'oauth_signature_method' => 'HMAC-SHA1',
+    'oauth_version' => '1.0',
+    'oauth_signature' => 'FQXk%2BqhcIq2JRuspof%2B0mmMVAOw%3D',
+  ),
+)
+2009-12-15T05:04:30-08:00 INFO (6): Upload result is stdClass::__set_state(array(
+   'favorited' => false,
+   'in_reply_to_user_id' => NULL,
+   'in_reply_to_status_id' => NULL,
+   'in_reply_to_screen_name' => NULL,
+   'source' => '<a href="http://moodspin.lc/" rel="nofollow">moodspin_test</a>',
+   'truncated' => false,
+   'id' => 6695233200,
+   'text' => 'I\'m in a good mood http://moodspin.com/ntst12',
+   'created_at' => 'Tue Dec 15 13:04:16 +0000 2009',
+))
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
+2009-12-15T05:04:30-08:00 INFO (6): User Tokens are token : 82584556-Wm9DUI9NZv0QnErsHIx1lzBpOd8LLvA9glDJHC3Dc and secret :zH0p2scBfHA88o2arNHNLZIbKw6MbA11ODxqS9k7WY
