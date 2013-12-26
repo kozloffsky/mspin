@@ -1,0 +1,273 @@
+#moodChooser {
+	width: 384px;
+	height: 147px;
+	background: transparent url(../images/mood-chooser-bg.png);
+	position: relative;
+	padding: 10px;
+	z-index: 500;
+}
+
+#moodChooser .avatar {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 73px;
+	height: 73px;
+}
+
+#moodChooser .avatar img {
+	width: 73px;
+	height: 73px;
+	position: absolute;
+}
+
+#moodChooser .avatar img.overlay {
+	display: none;
+}
+
+#moodChooser.disabled .avatar img.overlay {
+	display: none !important;
+}
+
+#moodChooser h2 {
+	margin: 0;
+	font-size: 140%;
+	width: 183px;
+	height: 17px;
+	line-height: 17px;
+	text-indent: -1000px;
+	background: transparent url('../images/text/what.mood.are.you.in.png') no-repeat;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	right: 13px;
+}
+
+#moodChooser.disabled h2 {
+	left: 91px;
+}
+
+#moodChooser h3 {
+	color: #636363;
+	margin: 0;
+	font-size: 140%;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	position: absolute;
+	top: 11px;
+	left: 91px;
+}
+
+#moodChooser.disabled h3 {
+	/*display: none;*/
+}
+
+#moodChooser .badge {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+#moodChooser.disabled .badge {
+	display: none;
+}
+
+#moodChooser .badge a {
+	display: block;
+	width: 76px;
+	height: 19px;
+	line-height: 18px;
+	overflow: hidden;
+	background: transparent url('../images/button-badge-bg.png') no-repeat;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #6f6f6f;
+	font-weight: bold;
+}
+
+#moodChooser .message {
+	position: absolute;
+	left: 10px;
+	bottom: 12px;
+	width: 289px;
+}
+
+#moodChooser .message .textarea {
+	height: 48px;
+	background: #DBFFFE url('../images/mood-picker-message-bg.png') no-repeat;
+	overflow: hidden;
+}
+
+#moodChooser .message textarea {
+	border: 0;
+	margin: 0;
+	padding: 4px;
+	width: 281px;
+	height: 40px;
+	font-family: Arial;
+	font-size: 110%;
+	background: none;
+	resize: none;
+	outline-style: none;
+	overflow: auto;
+}
+
+#moodChooser .message .counter {
+	display: block;
+	padding: 4px 2px;
+	text-align: right;
+}
+
+#moodChooser .message .reset {
+	display: block;
+	padding: 0 2px 8px;
+	width: 69px;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+	color: #333;
+}
+
+#moodChooser .buttons {
+	position: absolute;
+	right: 11px;
+	bottom: 12px;
+	z-index: 505;
+}
+#moodChooser .buttons input {
+	width: 88px;
+	height: 47px;
+	background: #AFAFAF url('../images/button-update-bg.png') no-repeat;
+	text-transform: uppercase;
+	border: 0;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 0;
+}
+
+#moodChooser ul a {
+	display: block;
+	padding: 0;
+	position: absolute;
+	background: transparent url(../images/mood-category-bg.png) no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -1000px;
+}
+#moodChooser.disabled ul a {
+}
+
+#moodChooser .picker {
+	position: absolute;
+	top: 51px;
+	left: 92px;
+	z-index: 510;
+}
+
+#moodChooser ul ul a {
+	padding: 2px 2px 1px 1px;
+	position: static;
+	background: none;
+}
+
+#moodChooser ul ul a:hover {
+	background: transparent url(../images/mood-bg.png);
+}
+
+#moodChooser ul li a {
+	z-index: 520;
+}
+
+#moodChooser ul li:hover a {
+	z-index: 530;
+}
+
+#moodChooser ul a span {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+#moodChooser.disabled ul a span {
+}
+
+#moodChooser.disabled ul ul a span {
+}
+
+#moodChooser ul a img {
+	width: 24px;
+	height: 24px;
+	border: 0;
+}
+
+#moodChooser ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#moodChooser ul li {
+	float: left;
+	position: relative;
+	margin-right: 2px;
+	width: 33px;
+	height: 33px;
+	z-index: 515;
+}
+
+#moodChooser ul li:hover {
+	z-index: 516;
+}
+
+#moodChooser ul li div {
+	display: none;
+	position: absolute;
+	z-index: 525;
+	top: 24px;
+}
+
+#moodChooser ul li:hover div {
+	display: block;
+}
+
+#moodChooser ul li div div {
+	position: static;
+}
+
+#moodChooser ul li .top,
+#moodChooser ul li .bottom {
+	width: 155px;
+	height: 5px;
+	background: transparent url('../images/mood-picker-corners.png') no-repeat;
+	font-size: 1px;
+}
+
+#moodChooser ul li .bottom {
+	background-position: 0px -5px;
+}
+
+#moodChooser ul li ul {
+	float: none;
+	background: #CCC;
+	overflow: hidden;
+	width: 142px;
+	padding: 5px 4px 5px 7px;
+	border-left: 1px solid #949494;
+	border-right: 1px solid #949494;
+	background: #E8E8E8 url('../images/mood-picker-bg.png') repeat-x;
+}
+
+#moodChooser ul li ul li {
+	position: static;
+	margin-right: 0;
+	width: auto;
+	height: auto;
+}

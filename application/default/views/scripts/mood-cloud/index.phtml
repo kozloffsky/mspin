@@ -1,0 +1,26 @@
+<p id="moodCloud">
+    <?php foreach($this->cloud as $mood):?>
+    	<?php
+    	    $css = '';
+    	    if ($mood['id'] == $this->moodId) {
+    	        $css = 'selected';
+    	    }
+    	    $mood['name'] = str_replace(' ', '&nbsp;', $mood['name']);
+    	?>
+		<a class="<?php echo $css; ?>" style="font-size: <?php echo $mood['size']; ?>em" href="#<?php echo $mood['id']; ?>"><?php echo $mood['name']; ?></a>
+    <?php endforeach;?>
+</p>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+    $('#moodCloud a').click(function() {
+        $('#moodCloud a.selected').removeClass('selected');
+        $(this).addClass('selected');
+        $('#usersListForm :input[name=page]').val(1);
+        $('#usersListForm :input[name=mood]').val(this.href.split('#')[1]);
+        $('#usersListForm').submit();
+    });
+});
+-->
+</script>

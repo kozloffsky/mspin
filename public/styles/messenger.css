@@ -1,0 +1,26 @@
+/**
+ * Status Message
+ */
+#statusMessage {
+    position: absolute;
+    z-index: 9999;
+    width: 400px;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0.9;
+    filter:Alpha(Opacity=90);
+}
+
+#statusMessage .ui-corner-all {
+    padding: 0 .7em;
+}
+
+#statusMessage .ui-icon {
+    float: left;
+    margin-right: .3em;
+}
+
+#statusMessage p {
+    margin: 10px 0;
+}

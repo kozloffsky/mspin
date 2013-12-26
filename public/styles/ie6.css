@@ -1,0 +1,9 @@
+html, body {
+	height: 100%;
+	background: none;
+	color: #FFF;
+}
+
+#page {
+	display: none;
+}

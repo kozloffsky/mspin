@@ -1,0 +1,16 @@
+<?php 
+/**
+ * User's network settings page
+ *
+ * @author
+ * @version
+ */
+$this->headTitle($this->translate('page.title.network'));
+$this->placeholder('tab')->set('network');
+?>
+<div id="network">
+	<div class="empty">
+		<h3><?php echo $this->translate('network.empty.title'); ?></h3>
+		<a href="/my-network/options/"><?php echo $this->translate('network.empty.button'); ?></a>
+	</div>
+</div>

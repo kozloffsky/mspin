@@ -1,0 +1,6 @@
+<?php $this->placeholder('navigation')->set('hidden')?>
+<?php foreach ($this->form->getErrorMessages() as $message):?>
+	<p><?php echo $message?></p>
+<?php endforeach;?>
+<a href="/">home</a>
+<?php echo $this->form; ?>

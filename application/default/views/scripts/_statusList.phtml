@@ -1,0 +1,45 @@
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+    $('.userlist ul a').click(function() {
+        var unescapeHtml = function (html) {
+            var temp = document.createElement("div");
+            temp.innerHTML = html;
+            var result = temp.childNodes[0].nodeValue;
+            temp.removeChild(temp.firstChild)
+            return result;
+        }
+
+        var href = this.href.split('#')[1];
+        if (href) {
+            var textarea = $('#moodChooser textarea');
+            if (href.substr(0, 2) == 'RT') {
+                href = href.substr(2, href.length - 2);
+                textarea.val(unescapeHtml('RT ' + href + ' ' + $('p', this.parentNode.parentNode.parentNode).html()));
+            } else {
+                textarea.val(href + ' ');
+            }
+            textarea.focus();
+            return false;
+        }
+    });
+});
+//-->
+</script>
+<ul>
+    <?php foreach($this->statuses as $status):?>
+        <li>
+            <div>
+                <img src="<?php echo $status->avatar; ?>" alt="<?php echo $status->login; ?>" />
+                <p><?php echo $this->escape($status->message); ?></p>
+                <p class="info"><?php printf($this->translate('userlist.info.text'), $status->login, $this->timeAgo($status->date)); ?></p>
+                <ul>
+                    <li><a href="http://twitter.com/<?php echo $status->login; ?>" target="_blank"><?php echo $this->translate('userlist.link.follow'); ?></a></li>
+                    <li><a href="#RT@<?php echo $status->login; ?>"><?php echo $this->translate('userlist.link.reTweet'); ?></a></li>
+                    <li><a href="#@<?php echo $status->login; ?>"><?php echo $this->translate('userlist.link.reply'); ?></a></li>
+                </ul>
+            </div>
+        </li>
+    <?php endforeach?>
+</ul>
+<?php echo $this->paginationControl($this->statuses, 'Sliding', '_statusListPagination.phtml'); ?>

@@ -1,0 +1,81 @@
+<?php
+    $this->headTitle($this->translate('page.title.topPeople'));
+?>
+<?php
+$caching = Zend_Registry::get('cacheFEEnabled');
+if ($caching) {
+    $cache = Zend_Registry::get('cacheFE');
+    $cache->start();
+}
+?>
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$('div.list').tooltips({
+		targetClass  : '.hasTooltip',
+		bindLinks    : false,
+		tooltipFixed : false
+	});
+});
+//-->
+</script>
+
+<div id="moodiestPeople">
+    <div class="date">
+        <div>
+            <div>
+                <a class="prev" href="#">&lt;</a>
+                <span>August 2009</span>
+                <a class="next" href="#">&gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <h3><?php echo $this->translate('topPeople.moodiestPeople'); ?></h3>
+        
+        <?php if ($this->monthMoodiest) : ?>
+        <ul>
+            <?php foreach ($this->monthMoodiest as $monthUser) : ?>
+            <li>
+                <a class="hasTooltip" href="/<?php echo $monthUser['login'] ?>">
+                    <img title="" alt="" src="<?php echo $monthUser['avatar'] ?>" border="0" />
+                </a>
+                <?php
+                    echo $this->partial(
+                        'partials/tooltip.phtml',
+                        array(
+                            'tips' => array($monthUser),
+                            'showLinks' => false
+                        )
+                    );
+                ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+        
+        <h3><?php echo $this->translate('topPeople.lastPeople'); ?></h3>
+        
+        <?php if ($this->lastMoodiest) : ?>
+        <ul>
+            <?php foreach ($this->lastMoodiest as $lastUser) : ?>
+            <li>
+                <a class="hasTooltip" href="/<?php echo $lastUser['login'] ?>">
+                    <img title="" alt="" src="<?php echo $lastUser['avatar'] ?>" border="0" />
+                </a>
+                <?php
+                    echo $this->partial(
+                        'partials/tooltip.phtml',
+                        array(
+                            'tips' => array($lastUser),
+                            'showLinks' => false
+                        )
+                    );
+                ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+</div>

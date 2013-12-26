@@ -1,0 +1,33 @@
+<div class="pagination" id="paginationControl">
+<?php if (isset($this->previous)): ?>
+    <a href="#<?php echo $this->previous; ?>">&laquo; Previous</a> |
+<?php else: ?>
+    <span class="disabled">&laquo; Previous</span> |
+<?php endif; ?>
+
+<?php foreach ($this->pagesInRange as $page): ?>
+    <?php if ($page != $this->current): ?>
+        <a href="#<?php echo $page; ?>"><?php echo $page; ?></a> |
+    <?php else: ?>
+        <span class="current"><?php echo $page; ?></span> |
+    <?php endif; ?>
+<?php endforeach; ?>
+
+<?php if (isset($this->next)): ?>
+    <a href="#<?php echo $this->next; ?>">Next &raquo;</a>
+<?php else: ?>
+    <span class="disabled">Next &raquo;</span>
+<?php endif; ?>
+</div>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+    $('.pagination a').click(function() {
+        $('#filterForm :input[name=page]').val(this.href.split('#')[1]);
+        $('#filterForm').submit();
+        return false;
+    });
+});
+-->
+</script>

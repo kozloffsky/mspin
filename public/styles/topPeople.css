@@ -1,0 +1,208 @@
+/**
+ * Top People Summary
+ */
+#topPeople {
+	width: 280px;
+}
+
+#topPeople ul {
+	list-style: none;
+	margin: 0;
+	padding: 6px 0 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+#topPeople ul li {
+	float: left;
+	padding: 0 8px 7px 0;
+}
+
+#topPeople ul a {
+	float: left;
+}
+
+#topPeople ul img {
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin: 0;
+}
+
+#topPeople .more {
+	text-align: right;
+	line-height: 13px;
+	text-transform: uppercase;
+	padding-right: 8px;
+}
+
+#topPeople .more a {
+	color: #2093d0;
+	text-decoration: none;
+}
+
+#topPeople .more a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * Top Moodiest People
+ */
+#moodiestPeople {
+	margin: 40px 0 0 0;
+	border: 1px solid #c2c2c2;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	position: relative;
+}
+
+#moodiestPeople { /* TODO: it's temporary */
+	margin-top: 6px;
+}
+
+#moodiestPeople .date { /* TODO: it's temporary */
+	display: none;
+}
+
+#moodiestPeople .date {
+	position: absolute;
+	top: -26px;
+	left: 50%;
+}
+
+#moodiestPeople .date div {
+	position: relative;
+	left: -50%;
+	font-size: 120%;
+	padding-left: 12px;
+	background: #b1b1b1 url('../images/date-bg.png') no-repeat left 0px;
+}
+
+#moodiestPeople .date div div {
+	position: static;
+	padding: 3px 12px 0 0;
+	background: transparent url('../images/date-bg.png') no-repeat right -40px;
+	line-height: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+
+#moodiestPeople .date a {
+	float: left;
+	width: 16px;
+	height: 22px;
+	background: transparent url('../images/date-arrows.png') no-repeat left 0px;
+	text-indent: -100px;
+	overflow: hidden;
+}
+
+#moodiestPeople .date a.next {
+	background-position: left -22px;
+}
+
+#moodiestPeople .date span {
+	float: left;
+	padding: 0 7px;
+	font-weight: bold;
+}
+
+#moodiestPeople .list {
+	width: 560px;
+	margin: 0 auto;
+}
+
+#moodiestPeople h3 {
+	margin: 1em 0 0.5em 0;
+	color: #666;
+	font-size: 140%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#moodiestPeople ul {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	margin: 0.5em 0 3em 0;
+	padding: 0;
+}
+
+#moodiestPeople li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#moodiestPeople ul a {
+	float: left;
+	padding: 5px 4px;
+}
+
+#moodiestPeople ul img {
+	width: 48px;
+	height: 48px;
+	display: block;
+	overflow: hidden;
+	background-image: url('../images/avatars/default_small.png');
+}
+
+/**
+ * Recent moods
+ */
+#recentMoods {
+	width: 280px;
+}
+
+#recentMoods ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#recentMoods ul li {
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #e8e8e8;
+	overflow: hidden;
+}
+
+#recentMoods ul li a {
+	float: left;
+	margin-right: -60px;
+}
+
+#recentMoods ul li a img {
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+
+#recentMoods ul li p {
+	margin-left: 60px !important;
+	min-height: 3.9em;
+	overflow: hidden;
+        font-size: 80% !important;
+}
+
+#recentMoods ul li .info {
+	font-size: 80%;
+	min-height: 0;
+}
+
+#recentMoods .more {
+	text-align: right;
+	line-height: 13px;
+	text-transform: uppercase;
+	padding-right: 8px;
+}
+
+#recentMoods .more a {
+	color: #2093d0;
+	text-decoration: none;
+}
+
+#recentMoods .more a:hover {
+	text-decoration: underline;
+}

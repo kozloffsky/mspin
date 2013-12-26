@@ -1,0 +1,57 @@
+/**
+ * Global application styles
+ */
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #333;
+	font-family: Arial, Helvetica, Verdana, Sans-Serif;
+	font-size: x-small;
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	padding: 20px;
+}
+
+#filterForm ul {
+	list-style: none;
+	margin: 0 0 10px;
+	padding: 0;
+	float: right;
+}
+
+#filterForm ul li {
+	float: left;
+	margin-left: 10px;
+}
+
+#filterForm label {
+	font-size: 120%;
+}
+
+table {
+	font-size: 120%;
+	width: 100%;
+	clear: both;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-left: 1px solid #a5acb2;
+	border-bottom: 1px solid #a5acb2;
+}
+
+table th {
+	background: #e0e0e0;
+	border-right: 1px solid #a5acb2;
+	border-top: 1px solid #a5acb2;
+	padding: 4px 8px;
+}
+
+table td {
+	border-right: 1px solid #a5acb2;
+	border-top: 1px solid #a5acb2;
+	padding: 4px 8px;
+}

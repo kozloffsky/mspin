@@ -1,0 +1,74 @@
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+    $('#moodChooser').moodChooser({
+        'limit' : 100
+    });
+});
+//-->
+</script>
+
+<form id="moodChooserForm" action="/status/update" method="post">
+    <div id="moodChooser">
+        <h3><?php
+            echo $this->userName ? $this->userName : $this->translate('mood.chosser.form.disabled.message')
+         ?></h3>
+        
+        <div class="badge">
+            <a href="/badge/get"><?php echo $this->translate('mood.chosser.form.getBadge'); ?></a>
+        </div>
+        
+        <div class="avatar">
+            <img src="<?php echo $this->avatar ?>?<?php echo time() ?>" />
+            <?php foreach ($this->moodCategories as $moodCategory) : ?>
+                <?php foreach ($moodCategory['moods'] as $mood) : ?>
+                    <img id="overlay_<?php echo $mood->id; ?>" class="overlay" src="/images/moods/overlay_<?php echo $mood->id; ?>.png" />
+                <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+        
+        <div class="message">
+            <a href="#<?php echo $this->emptyMood->id; ?>" class="reset mood" title=""><?php echo $this->translate('mood.chosser.form.button.reset'); ?></a>
+            <div class="counter"><span class="value">0</span> <?php echo $this->translate('mood.chosser.form.characersLeft'); ?></div>
+            <?php echo $this->moodForm->getMoodIdElement(); ?>
+            <div class="textarea">
+                <?php echo $this->moodForm->getMessageElement(); ?>
+            </div>
+        </div>
+        
+        <div class="picker">
+            <ul>
+                <?php foreach ($this->moodCategories as $moodCategory) : ?>
+                    <li>
+                        <a href="#mood_category_<?php echo $moodCategory['category']->id; ?>" title="<?php echo $this->escape($moodCategory['category']->name); ?>">
+                            <?php if (($this->currentMood->id != $this->emptyMood->id) && ($moodCategory['category']->id == $this->currentMood->mood_category_id)) : ?>
+                                <span style="background-image: url('/images/moods/mood_<?php echo $this->currentMood->id; ?>.png')"><?php echo $moodCategory['category']->name; ?></span>
+                            <?php else: ?>
+                                <span style="background-image: url('/images/moods/category_<?php echo $moodCategory['category']->id; ?>.png')"><?php echo $moodCategory['category']->name; ?></span>
+                            <?php endif; ?>
+                        </a>
+                        <div id="mood_category_<?php echo $moodCategory['category']->id; ?>">
+                            <div class="top"></div>
+                            <ul>
+                                <?php foreach ($moodCategory['moods'] as $mood) : ?>
+                                    <?php if ($this->emptyMood->id != $mood->id) : ?>
+                                    <li>
+                                        <a href="#<?php echo $mood->id; ?>" class="mood" title="<?php echo $this->escape($mood->default_message); ?>">
+                                            <span style="background-image: url('/images/moods/mood_<?php echo $mood->id; ?>.png')"><?php echo $mood->name; ?></span>
+                                        </a>
+                                    </li>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </ul>
+                            <div class="bottom"></div>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        
+        <div class="buttons">
+            <input type="submit" value="<?php echo $this->translate('mood.chosser.form.button.update'); ?>" />
+        </div>
+    </div>
+</form>

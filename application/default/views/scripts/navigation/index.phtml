@@ -1,0 +1,19 @@
+<ul>
+    <?php if ($this->loggedIn == true) : ?>
+        <?php if ($this->isAdmin) : ?>
+            <li><a href="/admin/"><?php echo $this->translate('header.menu.settings'); ?></a></li>
+            <li><a href="/admin/security/logout/"><?php echo $this->translate('header.menu.logout'); ?></a></li>
+        <?php else : ?>
+        <li><a href="/settings/"><?php echo $this->translate('header.menu.alerts'); ?></a></li>
+        <li><a href="/settings/"><?php echo $this->translate('header.menu.settings'); ?></a></li>
+        <li><a href="/twitter/logout/"><?php echo $this->translate('header.menu.logout'); ?></a></li>
+        <?php endif; ?>
+    <?php else : ?>
+        <li><a class="login" href="/twitter/">
+        	<span><?php echo $this->translate('header.menu.login'); ?></span>
+        </a></li>
+    <?php endif; ?>
+</ul>
+<a class="facebookConnect" href="http://apps.facebook.com/moodspin/ ">
+	<span><?php echo $this->translate('header.menu.connectWithFacebook'); ?></span>
+</a>

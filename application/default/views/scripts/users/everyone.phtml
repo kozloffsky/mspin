@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * List of everyone statuses
+ *
+ * @author
+ * @version
+ */
+
+$this->headTitle($this->translate('page.title.moodChooser'));
+$this->placeholder('tab')->set('everyone');
+?>
+
+<?php if ($this->layout()->isEnabled()) : ?>
+
+<form id="usersListForm" action="/users/everyone" method="post">
+    <input type="hidden" name="mood" value="" />
+</form>
+
+<div id="everyone">
+    <div class="border">
+<?php endif; ?>
+        
+        <div class="userlist">
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+                new TWTR.Widget({
+                  version: 2,
+                  type: 'search',
+                  search: '<?php echo addslashes($this->searchCriteria) ?>',
+                  interval: 6000,
+                  title: '',
+                  subject: '',
+                  width: 'auto',
+                  height: 530,
+                  theme: {
+                      shell: {
+                        background: '#ffffff',
+                        color: '#ffffff'
+                      },
+                      tweets: {
+                        background: '#ffffff',
+                        color: '#444444',
+                        links: '#1985b5'
+                      }
+                  },
+                  features: {
+                      scrollbar: false,
+                      loop: false,
+                      live: true,
+                      hashtags: false,
+                      timestamp: true,
+                      avatars: true,
+                      behavior: 'all'
+                  }
+                }).render().start();
+            </script>
+        </div>
+
+        <?php echo $this->action('index', 'mood-cloud', 'default', array('mood_id' => $this->selectedMoodId)); ?>
+
+<?php if ($this->layout()->isEnabled()) : ?>
+    </div>
+</div>
+<?php endif; ?>

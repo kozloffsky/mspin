@@ -1,0 +1,21 @@
+RewriteEngine on
+RewriteRule xd_receiver\.htm$ xd_receiver.htm [QSA,L]
+RewriteRule !\.(js|ico|gif|jpg|jpeg|png|css|swf|htc|xml)$ index.php
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault "now plus 5 days"
+    ExpiresByType text/html "now plus 30 minutes"
+    ExpiresByType text/plain "now plus 30 minutes"
+    ExpiresByType text/xml "now plus 30 minutes"
+</IfModule>
+
+FileETag MTime Size
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+

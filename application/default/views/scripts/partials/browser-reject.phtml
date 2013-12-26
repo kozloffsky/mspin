@@ -1,0 +1,17 @@
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+    $.reject({
+        //to test - reject all 
+        //reject       : { webkit: true, gecko: true, trident: true, presto: true, khtml: true, unknown: true }, 
+        display      : ['firefox','chrome','msie','safari','opera'],
+        header       : "<?php echo $this->translate('page.ie6.header') ?>",
+        paragraph1   : "<?php echo $this->translate('page.ie6.paragraph1') ?>",
+        paragraph2   : "<?php echo $this->translate('page.ie6.paragraph2') ?>",
+        closeMessage : "<?php echo $this->translate('page.ie6.closeMessage') ?>",
+        close        : false,
+        afterReject  : function(){$('#content').hide();} 
+    });
+});
+//-->
+</script>

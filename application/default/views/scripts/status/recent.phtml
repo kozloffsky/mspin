@@ -1,0 +1,17 @@
+<div id="recentMoods">
+	<h4><a href="/users/everyone">Recent moods</a></h4>
+	<ul>
+	    <?php foreach($this->recentMoods as $status): ?>
+	        <li>
+	            <div>
+	                <a href="/<?php echo $status['login']; ?>"><img src="<?php echo $status['avatar']; ?>" alt="<?php echo $status['login']; ?>" /></a>
+	                <p><?php echo $this->escape($status['latest_status_message']); ?></p>
+	                <p class="info"><?php printf($this->translate('userlist.info.text'), $status['login'], $this->timeAgo($status['latest_status_date'])); ?></p>
+	            </div>
+	        </li>
+	    <?php endforeach; ?>
+	</ul>
+	<div class="more">
+	    <a href="/users/everyone">More...</a>
+	</div>
+</div>

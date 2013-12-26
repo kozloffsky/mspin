@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * 404 error page view
+ *
+ * @author
+ * @version
+ */
+
+$this->headTitle('HTTP/1.1 404 Not Found');
+$this->layout()->setLayout('main');
+$this->placeholder('tab')->set('hide');
+?>
+
+<div id="error404">
+	<h3>Sorry</h3>
+	<p>we cannot find that page...</p>
+	<br /><br /><br />
+	<p>Back to moodspin homepage <a href="/">moodspin</a></p>
+</div>

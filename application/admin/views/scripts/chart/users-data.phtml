@@ -1,0 +1,52 @@
+<?php
+define('OFC_PARTS', 20);
+
+$chart = new OFC_Chart();
+
+$title = new OFC_Elements_Title('Users Registration');
+$chart->set_title($title);
+$chart->set_bg_colour('#FFFFFF');
+
+$labels = new OFC_Elements_Axis_X_Label_Set();
+$labels->set_labels($this->labels);
+$labels->set_vertical();
+
+$y_axis = new OFC_Elements_Axis_Y();
+$y_axis->set_range(0, $this->total + 10);
+$y_axis->set_colour('#4A7EBB');
+$step = ceil($this->total / OFC_PARTS);
+if ($step < 5)
+    $step = 5;
+$y_axis->set_steps($step);
+$y_axis->set_grid_colour('#CCCCCC');
+$chart->set_y_axis($y_axis);
+
+//TODO second chart sould be applied to this axis
+// in this version of OFC it's not possible
+/*$y_axis_right = new OFC_Elements_Axis_Y_Right();
+$maxPeople = max($this->people);
+$y_axis_right->set_range(0, $maxPeople + 10);
+$step = ceil($this->total / 20);
+if ($step < 5)
+    $step = 5;
+$y_axis_right->set_steps($step);
+$y_axis_right->set_colour('#4F6228');
+$chart->set_y_axis_right($y_axis_right);*/
+
+$x_axis = new OFC_Elements_Axis_X();
+$x_axis->set_labels($labels);
+$x_axis->set_grid_colour('#FFFFFF');
+$chart->set_x_axis($x_axis);
+
+$peopleChart = new OFC_Charts_Line();
+$peopleChart->set_values($this->people);
+$peopleChart->set_colour('#4F6228');
+//$chart->attach_to_y_right_axis($peopleChart);
+$chart->add_element($peopleChart);
+
+$totalPeopleChart = new OFC_Charts_Line();
+$totalPeopleChart->set_values($this->totalPeople);
+$totalPeopleChart->set_colour('#4A7EBB');
+$chart->add_element($totalPeopleChart);
+
+echo $chart->toString();

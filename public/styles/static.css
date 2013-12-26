@@ -1,0 +1,305 @@
+/**
+ * Error 404
+ */
+#error404 {
+	background: transparent url('../images/static/404-bg.png') no-repeat 35px 0;
+	padding: 0 0 50px 200px;
+	font-size: 160%;
+	font-weight: bold;
+}
+
+#error404 a {
+	display: block;
+	background: transparent url('../images/static/404-button.png') no-repeat;
+	width: 201px;
+	height: 60px;
+	overflow: hidden;
+	text-indent: -1000px;
+	margin: 0.5em 0 0.5em 6em;
+}
+
+#staticpage {
+	font-size: 130%;
+}
+
+#staticpage h3 {
+	color: #2093d0;
+	font-size: 130%;
+	margin: 1em 0;
+	text-transform: uppercase;
+}
+
+/**
+ * Home page
+ */
+#homepage {
+	font-size: 110%;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+#homepage h3.title {
+	color: #6f6f6f;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 0.4em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+#homepage h3.title span {
+	color: #F00;
+	display: block;
+}
+
+#homepage h3.title b {
+	font-size: 120%;
+	display: block;
+}
+
+#homepage h3.title i {
+	display: block;
+	font-style: normal;
+}
+
+#homepage .panel.left {
+	width: 404px;
+	float: left;
+	margin: 0;
+	padding: 0 15px 15px 0;
+}
+
+#homepage .panel.right {
+	width: 276px;
+	float: left;
+	margin: 0;
+	padding: 0 5px 15px 10px;
+}
+
+#homepage .panel.bottom {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 10px 0 20px;
+	border-top: 1px solid #c4c4c4;
+}
+
+#homepage .panel div {
+}
+
+#homepage .panel h4 {
+	color: #2093d0;
+	font-size: 130%;
+	margin: 0.2em 0;
+	text-transform: uppercase;
+}
+
+#homepage .panel h4 a {
+	color: #2093d0;
+	text-decoration: none;
+}
+
+#homepage .panel h4 a:hover {
+	text-decoration: underline;
+}
+
+#homepage .panel p {
+	margin: 0.2em 0;
+	color: #636363;
+	font-size: 130%;
+}
+
+#homepage .panel .iphone {
+	float: left;
+	width: 174px;
+	overflow: hidden;
+	background: transparent url('../images/static/iphone-screenshot.png') no-repeat;
+	padding: 0 3px 20px 56px;
+}
+
+#homepage .panel .badge-box {
+	float: left;
+	width: 230px;
+	padding: 0 10px 0 0;
+}
+
+#homepage .panel .badge-box a.screenshot {
+	display: block;
+	background: transparent url('../images/static/badge-screenshot.png') no-repeat left bottom;
+	width: 228px;
+	height: 80px;
+	text-indent: -1000px;	
+	overflow: hidden;
+}
+
+#homepage .panel .facebook {
+	float: left;
+	width: 235px;
+    margin-bottom: 10px
+}
+
+#homepage .panel .facebook a {
+	float: left;
+	margin-right: 5px;
+}
+
+#homepage .panel .facebook img.facebook,
+#homepage .panel .twitter img.twitter {
+    width: 43px;
+    height: 43px;
+}
+
+#homepage .panel .facebook p {
+	margin: 0 0 1em;
+}
+
+#homepage .panel .facebook h4 a,
+#homepage .panel .facebook p a {
+	margin: 0;
+    float: none;
+}
+
+#homepage .panel .twitter {
+	float: left;
+	width: 190px;
+}
+
+#homepage .panel .twitter a {
+	float: left;
+	margin-right: 5px;
+}
+
+#homepage .panel .twitter p {
+	margin: 0 0 1em;
+}
+
+#homepage .panel .twitter h4 a,
+#homepage .panel .twitter p a {
+	margin: 0;
+    float: none;
+}
+
+#homepage .moodline .buttons {
+	padding: 4px 0;
+	overflow: hidden;
+}
+
+#homepage .moodline .buttons a {
+	display: block;
+	float: left;
+	font-size: 140%;
+	border: 1px solid #bfbfbf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #cfcfcf url('../images/button-bg.png') repeat-x;
+	line-height: 32px;
+	height: 32px;
+	width: auto;
+	min-width: 80px;
+	padding: 0 15px;
+	margin: 0 10px;
+	color: #6f6f6f;
+	overflow: hidden;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	text-indent: 0;
+}
+
+#homepage .moodline .embeded {
+	width: 400px;
+	height: 300px;
+	background: #CCC;
+}
+
+/* Become a fan button */
+
+.fb_profile_connect {
+    margin-left:0;
+    color:#333333;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size:11px;
+    text-align:left;
+}
+
+.fb_profile_connect .UIActionButton {
+    margin:0;
+}
+
+.fb_profile_connect .UIActionButton {
+    margin:5px;
+}
+
+.fb_profile_connect .UIButton_Gray {
+    -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);
+    background-color:#EEEEEE;
+    border-color:#999999 #999999 #888888;
+}
+
+.fb_profile_connect .UIButton_Gray:active {
+    background-color:#DDDDDD;
+    background-image:none;
+    border-color:#999999;
+}
+
+.fb_profile_connect .UIButton {
+    border-style:solid;
+    border-width:1px;
+    display:inline-block;
+    outline-color:-moz-use-text-color;
+    outline-style:none;
+    outline-width:medium;
+    padding:3px 6px;
+    vertical-align:bottom;
+    margin-left: 0px;
+}
+
+.fb_profile_connect .UIButton:active {
+    -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.UIButton:hover, .UIButton:active {
+    text-decoration:none;
+}
+
+.fb_profile_connect a {
+    color:#3B5998;
+    cursor:pointer;
+    outline-style:none;
+    text-decoration:none;
+}
+
+.fb_profile_connect .UIButton_Gray .UIButton_Text {
+    color:#333333;
+}
+
+.fb_profile_connect .UIButton_Text {
+    background-color:transparent;
+    border:medium none;
+    cursor:pointer;
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    line-height:14px;
+    margin:0;
+    overflow:visible;
+    padding:0;
+    width:auto;
+}
+
+.fb_profile_connect span.UIButton_IconNoSpriteMap {
+    background-image:url(../images/static/fb-fan-icon.png);
+    background-repeat: no-repeat;
+    margin-bottom:-1px;
+    margin-top:-1px;
+}
+
+.fb_profile_connect span.UIButton_Icon, img.UIButton_Icon {
+    display:block;
+    float:left;
+    height:16px !important;
+    margin:-2px 5px 0 0;
+    width:16px !important;
+}
+

@@ -1,0 +1,47 @@
+<?php
+$this->headTitle('Moods\' List');
+$this->headScript()->appendFile('/scripts/lib/jquery/plugins/jquery.tablesorter.js');
+$this->headLink()->appendStylesheet('/scripts/lib/jquery/css/tablesorter/style.css');
+$this->headLink()->appendStylesheet('/styles/users.css');
+?>
+
+<script type="text/javascript">
+<!--
+$(function() {
+	$("#moodsTable").addClass("tablesorter");
+    $("#moodsTable").tablesorter({widthFixed: true,widgets: ['zebra']});
+});
+//-->
+</script>
+
+<table id="moodsTable">
+	<thead>
+		<tr>
+		    <th>Mood name</th>
+		    <th>Icon</th>
+		    <th># used</th>
+		    <th># unique</th>
+		    <th>Last date used</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+		    <th>Mood name</th>
+		    <th>Icon</th>
+		    <th># used</th>
+		    <th># unique</th>
+		    <th>Last date used</th>
+		</tr>
+	</tfoot>
+	<tbody>
+        <?php foreach ($this->moods as $mood) : ?>
+            <tr>
+	            <td><?php echo $mood['mood_name']; ?></td>
+	            <td><div class="mood mood_shown"><img src="/images/moods/mood_<?php echo $mood['mood_id']; ?>.png" /></div></td>
+	            <td><?php echo $mood['used_num']; ?></td>
+	            <td><?php echo $mood['used_unique']; ?></td>
+	            <td><?php echo $mood['used_last_date']; ?></td>
+	        </tr>
+        <?php endforeach; ?>
+	</tbody>
+</table>

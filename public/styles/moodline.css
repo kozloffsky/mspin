@@ -1,0 +1,149 @@
+#moodline {
+	border: 1px solid #c2c2c2;
+	padding: 8px;
+	position: relative;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+/**
+ * Date range switcher
+ */
+#moodline .date {
+	font-size: 120%;
+	position: absolute;
+	top: -26px;
+	right: 5px;
+	padding-left: 12px;
+	background: #b1b1b1 url('../images/date-bg.png') no-repeat left 0px;
+}
+
+#moodline .date div {
+	padding: 3px 12px 0 0;
+	background: transparent url('../images/date-bg.png') no-repeat right -40px;
+	line-height: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+
+#moodline .date a {
+	float: left;
+	width: 16px;
+	height: 22px;
+	background: transparent url('../images/date-arrows.png') no-repeat left 0px;
+	text-indent: -100px;
+	overflow: hidden;
+}
+
+#moodline .date a.next {
+	background-position: left -22px;
+}
+
+#moodline .date span {
+	float: left;
+	padding: 0 7px;
+	font-weight: bold;
+}
+
+/**
+ * Avatar
+ */
+#moodline .avatar {
+	position: absolute;
+}
+
+#moodline .avatar img {
+	display: block;
+	overflow: hidden;
+	width: 32px;
+	height: 32px;
+}
+
+/**
+ * Grid for mood background
+ */
+#moodline table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 110%;
+}
+
+#moodline table th,
+#moodline table td {
+	font-weight: normal;
+}
+
+#moodline table thead th {
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#moodline table tbody th {
+	padding: 0 8px 0 0;
+	text-align: right;
+	border-right: 1px solid #c9c9c9;
+}
+
+#moodline table tbody td {
+	width: 48px;
+	height: 37px;
+	padding: 0;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#moodline th span {
+	display: block;
+	padding: 2px 4px;
+	float: right;
+}
+
+#moodline th span.selected {
+	color: #FFF;
+	background-color: #666;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/**
+ * Emotions
+ */
+#moodline .markers {
+	position: absolute;
+	top: 42px;
+	left: 83px;
+	width: 638px;
+	height: 260px;
+	overflow: hidden;
+}
+
+#moodline .markers span {
+	position: absolute;
+}
+
+#moodline .mood {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-position: 0px 0px;
+	z-index: 901;
+}
+
+#moodline .color {
+	display: block;
+	height: 23px;
+	background-repeat: repeat-x;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	z-index: 900;
+}
+
+#moodline .dot {
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-image: url('../images/dot.png');
+	z-index: 902;
+}

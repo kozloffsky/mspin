@@ -1,0 +1,21 @@
+<?php if ($this->theme) : ?>
+    <?php if ($this->theme->background_color) : ?>
+	body {
+		background-color: #<?php echo $this->theme->background_color; ?>;
+		background-image: url('/images/moods/body_<?php echo $this->theme->mood_id; ?>.gif');
+	}
+	<?php endif; ?>
+	<?php if ($this->theme->color) : ?>
+	#header ul a {
+		color: #<?php echo $this->theme->color; ?>;
+	}
+	#header ul li,
+	#footer ul li {
+		background-image: url('/images/menu-separator-<?php echo $this->theme->color; ?>.png');
+	}
+	#footer,
+	#footer a {
+		color: #<?php echo $this->theme->color; ?>;
+	}
+	<?php endif; ?>
+<?php endif;?>

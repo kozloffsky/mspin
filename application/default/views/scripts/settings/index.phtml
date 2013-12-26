@@ -1,0 +1,124 @@
+<?php
+    $this->headTitle($this->translate('page.title.settings'));
+    $this->headScript()->appendFile('/scripts/app/moodselector.js')
+                       ->appendFile('/scripts/app/network.js')
+                       ->appendFile('/scripts/app/settings.js');
+    $this->headLink()->appendStylesheet('/styles/network.css');
+?>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#settings form').moodSelector();
+        $('#settings form').settings({
+            alertsCheckbox:  '#moodspinSendAlerts',
+            alertsContainer: '.alertsContainer'
+        });
+    });
+</script>
+
+<div id="settings">
+    <form id="settingsForm" method="post" action="/settings/save/">
+    
+        <ul>
+            <li>
+                <h3><?php echo $this->translate('page.settings.section.settings'); ?></h3>
+                <ul>
+                    <li>
+                        <span class="left">
+                            <input id="moodspinFollowing" type="checkbox" name="moodspin_following" value="1" <?php echo $this->moodspinFollowing ? "checked='checked'" : "" ?> />
+                        </span>
+                        <span class="right">
+                            <label for="moodspinFollowing"><?php echo $this->translate('page.settings.followMoodspinOnTwitter') ?></label>
+                        </span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3><?php echo $this->translate('page.settings.section.alerts'); ?></h3>
+                <ul>
+                    <li>
+                        <span class="left">
+                            <input id="moodspinSendAlerts" type="checkbox" name="moodspin_send_alerts" value="1" <?php echo $this->sendAlerts ? "checked='checked'" : "" ?> />
+                        </span>
+                        <span class="right">
+                            <label for="moodspinSendAlerts"><?php echo $this->translate('page.settings.sendAlerts') ?></label>
+                        </span>
+                    </li>
+                    <li class="alertsContainer">
+                        <span class="right">
+                            <label><?php echo $this->translate('page.settings.emailField'); ?>:</label>
+                            <input type="text" name="email_field" value="<?php echo $this->emailField ?>" size="30" maxlength="32" />
+                            <?php if (isset($this->emailError) && $this->emailError == '') : ?>
+                                <span class="validated"><?php echo $this->translate('page.settings.validatedField') ?></span>
+                            <?php elseif ($this->emailError == 'error') : ?>
+                                <span class="notValid"><?php echo $this->translate('page.settings.emailInvalid') ?></span>
+                            <?php endif; ?>
+                        </span>
+        
+                        <h4><?php echo $this->translate('page.settings.followingMoodsText') ?></h4>
+                        
+                        <div class="moodsContainer">
+                            <ul class="moods">
+                                <?php if ($this->moodCategories) : ?>
+                                    <?php foreach ($this->moodCategories as $moodCategory) : ?>
+                                        <li><span><?php echo htmlspecialchars($moodCategory['category']['name']); ?>:</span>
+                                            <ul>
+                                                <?php foreach ($moodCategory['moods'] as $mood) : ?>
+                                                <?php if ($mood->id != Model_Moods::EMPTY_MOOD_ID) : ?>
+                                                    <?php
+                                                        $class = "";
+                                                        $checked = "";
+                                                        if (isset($this->alerts) && isset($this->alerts['moods'])) {
+                                                            if (in_array($mood->id,$this->alerts['moods'])) {
+                                                                $class = " class='selected'";
+                                                                $checked = " checked='checked' ";
+                                                            }
+                                                        }
+                                                    ?>
+                                                    <li<?php echo $class; ?>>
+                                                        <input<?php echo $checked; ?> type="checkbox" id="mood_<?php echo $mood->id ?>" name="mood_id[]" value="<?php echo (int)$mood->id ?>" />
+                                                        <label for="mood_<?php echo $mood->id ?>" title="<?php echo htmlspecialchars($mood->name); ?>" style="background-image: url(/images/moods/mood_<?php echo $mood->id ?>.png);">
+                                                           <?php echo htmlspecialchars($mood->name); ?></label>
+                                                    </li>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                            </ul>
+                                        </li>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </ul>
+                            <ul>
+                                <li><span>Options selected:</span>
+                                    <p></p>
+                                </li>
+                                <li><span>Include:</span>
+                                    <ul>
+                                        <li>
+                                            <input id="includeType_1" type="radio" name="include_type" value="1" <?php if ($this->alerts['includeType'] == 1) : ?>checked="checked"<?php endif; ?> />
+                                            <label for="includeType_1">People I Follow</label>
+                                        </li>
+                                        <li>
+                                            <input id="includeType_2" type="radio" name="include_type" value="2" <?php if ($this->alerts['includeType'] == 2) : ?>checked="checked"<?php endif; ?> />
+                                            <label for="includeType_2">People Who Follow Me</label>
+                                        </li>
+                                        <li>
+                                            <input id="includeType_3" type="radio" name="include_type" value="3" <?php if (!isset($this->alerts['includeType']) || $this->alerts['includeType'] == 3) : ?>checked="checked"<?php endif; ?> />
+                                            <label for="includeType_3">Both</label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="buttons">
+            <button type="submit" class="save" name="save" value="save"><span>Save</span></button>
+            <button type="submit" class="cancel" name="cancel" value="cancel"><span>Cancel</span></button>
+        </div>
+    
+    </form>
+</div>

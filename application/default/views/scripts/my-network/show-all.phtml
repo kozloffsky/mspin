@@ -1,0 +1,37 @@
+<?php
+/**
+ * User's network results page for selected mood
+ *
+ * @author Dmitry Gordienko <dmitry.gordienko@gmail.com>
+ * @version 0.2
+ */
+?>
+
+<?php if ($this->users) : ?>
+    <?php foreach ($this->users as $key => $row) : ?>
+        <li class="expanded">
+            <span style="background-image: url(/images/moods/mood_large_<?php echo $key; ?>.png);"></span>
+            <a class="prev disabled" href="#" title="<?php echo $this->translate('network.prev_page') ?>">&lt;</a>
+            <ul>
+                <?php foreach ($row['users'] as $user) : ?>
+                    <li>
+                        <a class="hasTooltip" href="/<?php echo $user['login'] ?>">
+                            <img src="<?php echo $user['avatar'] ?>" alt="<?php echo $user['login'] ?>" />
+                        </a>
+                        <?php
+                            echo $this->partial(
+                                'partials/tooltip.phtml',
+                                array(
+                                    'tips' => array($user),
+                                    'showLinks' => true
+                                )
+                            );
+                        ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+            <a class="next disabled" href="#" title="<?php echo $this->translate('network.next_page') ?>">&gt;</a>
+            <a class="less" href="#" title="<?php echo $this->translate('network.show_less') ?>">+</a>
+        </li>
+    <?php endforeach; ?>
+<?php endif; ?>

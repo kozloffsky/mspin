@@ -1,0 +1,41 @@
+<?php
+$this->headTitle('Send messages');
+$this->headScript()->appendFile('/scripts/app/messenger.js');
+$this->headLink()->appendStylesheet('/styles/users.css');
+?>
+
+<script type="text/javascript">
+var messenger = new Messenger();;
+$(document).ready(function() {
+    $('#message').limit(140, '#messageCharsLeft');
+});
+</script>
+
+<?php if(!empty($this->errors)): ?>
+<script type="text/javascript">
+    messenger.show("<?php echo implode('<br />', $this->errors); ?>", 'error');
+</script>
+<?php endif; ?>
+
+<form method="post">
+    <div style="float: left; margin-right:20px;">
+        <h2>Users list</h2>
+        <div>
+            <textarea style="height:400px; width: 200px;" id="users_list" name="users_list"></textarea>
+        </div>
+    </div>
+
+    <div style="float: left;">
+        <h2>Message text</h2>
+        <div>
+            <textarea style="height:100px; width: 400px;" id="message" name="message"></textarea>
+        </div>
+        <div style="float:left; margin-right:260px;">
+            <input type="submit" value="Send" />
+        </div>
+        <div style="float:left;">
+            <p><span id="messageCharsLeft">140</span> Characters left</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</form>

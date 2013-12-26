@@ -1,0 +1,23 @@
+#moodCloud {
+	margin: 0;
+	width: 200px;
+	float: left;
+	padding: 10px 5px;
+}
+
+#moodCloud a {
+	color: #5D5D5D;
+	text-decoration: none;
+	margin-right: 4px;
+	padding: 0 2px 0 1px;
+}
+
+#moodCloud a.selected {
+	color: #FFF;
+	background: #5D5D5D;
+}
+
+#moodCloud a:hover {
+	color: #FFF;
+	background: #5D5D5D;
+}

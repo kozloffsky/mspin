@@ -1,0 +1,74 @@
+#news {
+	position: absolute;
+	top: 20px;
+	left: 425px;
+	width: 250px;
+    padding:0;
+}
+
+#news ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#news li {
+	margin: 0 0 10px 0;
+	padding: 0;
+    overflow: hidden;
+}
+
+#news li a {
+    float: left;
+    margin-right:5px;
+}
+
+#news li img {
+    float: left;
+}
+
+#news .facebook a {
+    margin-left: 7px;
+}
+
+#news .facebook img {
+    width:43px;
+    height:43px;
+}
+
+#news li .iphone img {
+    width:56px;
+    height:99px;
+}
+
+#news h4 {
+	font-size: 130%;
+	text-transform: uppercase;
+	margin: 0;
+    padding: 0;
+}
+
+#news h4 {
+    color: #2093d0;
+}
+
+#news h4 a {
+    float: none;
+	color: #2093d0;
+	text-decoration: none;
+}
+
+#news h4 a:hover {
+	text-decoration: underline;
+}
+
+#news p {
+	font-size: 130%;
+	color: #636363;
+	margin: 0.2em 0;
+}
+
+#news p a {
+    margin: 0;
+    float: none;
+}

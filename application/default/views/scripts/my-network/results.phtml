@@ -1,0 +1,80 @@
+<?php
+/**
+ * User's network results page
+ *
+ * @author Moskalenko Alexander, Dmitry Gordienko <dmitry.gordienko@gmail.com>
+ * @version 0.2
+ */
+$this->headTitle($this->translate('page.title.network'));
+$this->placeholder('tab')->set('network');
+
+if (!$this->userSettings) {
+    $settings = new stdClass();
+    $settings->moods = array();
+    $settings->followings = MyNetworkController::NETWORK_BOTH_FOLLOW;
+    $this->userSettings = $settings;
+}
+?>
+<script type="text/javascript">
+<!--
+    $(document).ready(function(){
+        $('#network').network({
+            URL_GET_RESULTS    : '/my-network/results/',
+            maskMessage        : '<?php echo $this->translate('content.spinner.text'); ?>',
+            useTooltips        : true,
+            tooltipWrapper     : '.results',
+            tooltipTargetClass : '.hasTooltip'
+        });
+    });
+//-->
+</script>
+
+<div id="network">
+    <div class="settings">
+        <a href="/my-network/options/adjust/settings">
+            <span><?php echo $this->translate('network.options.ajust'); ?></span>
+        </a>
+    </div>
+    
+    <?php if ($this->users) : ?>
+        <ul class="results">
+            <?php foreach ($this->users as $key => $row) : ?>
+                <li rev="<?php echo MyNetworkController::NETWORK_PAGE_COUNT; ?>" rel="<?php echo $key; ?>" id="row_<?php echo $key; ?>">
+                    <span style="background-image: url(/images/moods/mood_large_<?php echo $key; ?>.png);"></span>
+                    <a class="prev disabled" href="#" title="<?php echo $this->translate('network.prev_page') ?>">&lt;</a>
+                    <ul>
+                        <?php foreach ($row['users'] as $user) : ?>
+                        <li>
+                            <a class="hasTooltip" href="/<?php echo $user['login'] ?>">
+                                <img src="<?php echo $user['avatar'] ?>" alt="<?php echo $user['login'] ?>" />
+                            </a>
+                            <?php
+			                    echo $this->partial(
+			                        'partials/tooltip.phtml',
+			                        array(
+			                            'tips' => array($user),
+			                            'showLinks' => true
+			                        )
+			                    );
+			                ?>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    <?php
+                        $nextDisabled = "";
+                        if (count($row['users']) < MyNetworkController::NETWORK_PAGE_COUNT) {
+                            $nextDisabled = " disabled";
+                        }
+                    ?>
+                    <a class="next <?php echo $nextDisabled; ?>" href="#" title="<?php echo $this->translate('network.next_page') ?>">&gt;</a>
+                    <a class="more" href="#" title="<?php echo $this->translate('network.show_all') ?>">+</a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else : ?>
+    	<div class="empty">
+	        <h3><?php echo $this->translate('network.emptyResult.title'); ?></h3>
+	        <a href="/my-network/options/adjust/settings"><?php echo $this->translate('network.emptyResult.button'); ?></a>
+    	</div>
+    <?php endif; ?>
+</div>

@@ -1,0 +1,21 @@
+<?php
+$this->headTitle('Moods\' Statistics');
+?>
+
+<script type="text/javascript" src="/scripts/lib/ofc/swfobject.js"></script>
+<script type="text/javascript">
+swfobject.embedSWF(
+    '/scripts/lib/ofc/open-flash-chart.swf',
+    'chart',
+    '100%',
+    '600',
+    '9.0.0',
+    'expressInstall.swf',
+    {
+        "data-file": '/admin/chart/moods-data/'
+    },
+    {'wmode': 'transparent'}
+);
+</script>
+
+<div id="chart"></div>

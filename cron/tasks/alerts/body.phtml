@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>moodspin :: share your mood</title>
+
+        <style type="text/css">
+        .content ul ul ul a:hover { text-decoration: underline !important; }
+        .footer a:hover { text-decoration: underline !important; }
+        </style>
+	</head>
+    <body style="font-size: x-small; font-family: Arial, Helvetica, Verdana, Sans-Serif; color: #333;">
+    	<div id="page" style="margin: 0 auto; width: 660px;">
+    		<div style="overflow: hidden; height: 92px;">
+                <a href="<?php echo $this->baseUrl; ?>"><img src="http://moodspin.com/images/email-logo.png" style="overflow: hidden; margin: 10px 0; text-indent: -1000px; display: block; height: 72px; float: left; width: 289px; border: none;" /></a>    		    
+	    		<div style="position: relative; padding: 12px 0 0; text-align: right; float: right;">
+	    			<p style="margin: 0px; font-size: 120%; color: #818181;">Adjust your mood alerts!</p>
+	    			<h2 style="margin:1px 0 0; font-size: 180%; font-weight: bold; text-transform: uppercase; color: #515151;">mood alerts</h2>
+	    			<p style="font-size: 180%; font-weight: bold; margin: 0; text-transform: uppercase; color: #515151;"><?php echo date("F d, Y",time()) ?></p>
+	    		</div>
+    		</div>
+    		<div class="content" style="padding: 0 70px;">
+    			<ul style="margin: 0; list-style: none; padding: 0;">
+                    <?php echo $this->data ?>
+    			</ul>
+    		</div>
+    		<div class="footer" style="color: #8e8e8e; padding: 10px 0; text-align: center;">
+    			<p style="font-size: 110%; margin: 0;">To change your settings or unsubscribe plese go to <a style="text-decoration: none; color: #8e8e8e;" href="<?php echo $this->baseUrl; ?>"><?php echo $this->baseUrl; ?></a></p>
+    			<p class="copy" style="font-size: 90%; margin: 0;">
+					Copyright &copy; 2009 by moodspin Inc. All rights reserved.<br />
+					moodspin and the moodspin logo are trademarks owned by moodspin Inc.<br />
+					Any unauthorized use of trademarks or proprietary content from this website is prohibited.
+				</p>
+    		</div>
+    	</div>
+    </body>
+</html>

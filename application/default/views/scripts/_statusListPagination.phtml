@@ -1,0 +1,42 @@
+<div class="pagination">
+    <div>
+        <?php if($this->pageCount && $this->current == 1):?>
+            <a href="#2"><?php echo $this->translate('paginator.more'); ?></a>
+        <?php elseif ($this->pageCount): ?>
+            <!-- Previous page link -->
+            <?php if (isset($this->previous)): ?>
+                <a href="#<?php echo $this->previous; ?>"><?php echo $this->translate('pagination.previous'); ?></a>
+            <?php else: ?>
+                <span><?php echo $this->translate('pagination.previous'); ?></span>
+            <?php endif; ?>
+            
+            <!-- Numbered page links -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+              <?php if ($page != $this->current): ?>
+                <a href="#<?php echo $page; ?>"><?php echo $page; ?></a>
+              <?php else: ?>
+                <span class="current"><?php echo $page; ?></span>
+              <?php endif; ?>
+            <?php endforeach; ?>
+            
+            <!-- Next page link -->
+            <?php if (isset($this->next)): ?>
+                <a href="#<?php echo $this->next; ?>"><?php echo $this->translate('pagination.next'); ?></a>
+            <?php else: ?>
+                <span><?php echo $this->translate('pagination.next'); ?></span>
+            <?php endif; ?>
+        <?php endif; ?>
+    </div>
+</div>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+    $('.pagination a').click(function() {
+        $('#usersListForm :input[name=page]').val(this.href.split('#')[1]);
+        $('#usersListForm').submit();
+        return false;
+    });
+});
+-->
+</script>

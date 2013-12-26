@@ -1,0 +1,17 @@
+<div id="topPeople">
+    <h4>
+        <a href="/top-people/"><?php echo $this->translate('topPeople.title'); ?></a>
+    </h4>
+	<ul>
+	    <?php foreach($this->users as $user):?>
+	        <li>
+	        	<a href="/<?php echo $user['login'] ?>" title="<?php echo $this->escape($user['login']); ?>">
+	            	<img src="<?php echo $user['image'] ?>" />
+	            </a>
+	        </li>
+	    <?php endforeach;?>
+	</ul>
+	<div class="more">
+	    <a href="/top-people/"><?php echo $this->translate('topPeople.more'); ?></a>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<?php if ($this->tips) : ?>
+	<div class="tooltips">
+		<?php foreach ($this->tips as $tip ) : ?>
+			<?php if ($tip['latest_status_message']) : ?>
+			<div>
+			    <p><?php echo $tip['latest_status_message'] ?></p>
+			    <?php if ($this->showLinks) : ?>
+		            <ul>
+		                <li><a target="_blank" href="http://twitter.com/<?php echo $tip['login'] ?>">Follow</a></li>
+		                <li><a href="#RT@<?php echo $tip['login'] ?>">Re-Tweet</a></li>
+		                <li><a href="#@<?php echo $tip['login'] ?>">Reply</a></li>
+		            </ul>
+			    <?php endif; ?>
+			</div>
+			<?php endif; ?>
+		<?php endforeach; ?>
+	</div>
+<?php endif; ?>

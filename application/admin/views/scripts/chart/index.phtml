@@ -1,0 +1,46 @@
+<?php
+$this->headTitle('Registrations\' Statistics');
+?>
+
+<script type="text/javascript"><!--
+$(function() {
+    $('#filterForm .date:input').datepicker({
+        dateFormat: 'yy-mm-dd'
+    });
+});
+//-->
+</script>
+
+<form id="filterForm" action="" method="post">
+    <ul>
+        <li>
+            <label for="from_date">From:</label>
+            <input class="date" type="text" name="from_date" value="<?php echo $this->form->getValue('from_date')?>" />
+        </li>
+        <li>
+            <label for="to_date">To:</label>
+            <input class="date" type="text" name="to_date" value="<?php echo $this->form->getValue('to_date')?>" />
+        </li>
+        <li>
+            <input type="submit" value="Go" />
+        </li>
+    </ul>
+</form>
+
+<script type="text/javascript" src="/scripts/lib/ofc/swfobject.js"></script>
+<script type="text/javascript">
+swfobject.embedSWF(
+    '/scripts/lib/ofc/open-flash-chart.swf',
+    'chart',
+    '100%',
+    '600',
+    '9.0.0',
+    'expressInstall.swf',
+    {
+        "data-file": '/admin/chart/users-data/fromDate/<?php echo $this->form->getValue('from_date')?>/toDate/<?php echo $this->form->getValue('to_date')?>/'
+    },
+    {'wmode': 'transparent'}
+);
+</script>
+
+<div id="chart"></div>

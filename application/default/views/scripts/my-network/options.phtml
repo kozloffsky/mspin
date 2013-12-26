@@ -1,0 +1,86 @@
+<?php
+/**
+ * User's network settings page
+ *
+ * @author Moskalenko Alexander, Dmitry Gordienko <dmitry.gordienko@gmail.com>
+ * @version 0.1
+ */
+$this->headTitle($this->translate('page.title.network'));
+$this->placeholder('tab')->set('network');
+
+if (!$this->userSettings) {
+    $settings = new stdClass();
+    $settings->moods = array();
+    $settings->followings = MyNetworkController::NETWORK_BOTH_FOLLOW;
+    $this->userSettings = $settings;
+}
+?>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#network form').moodSelector();
+    });
+</script>
+<div id="network">
+    <div class="settings">
+        <a class="selected" href="/my-network/options/adjust/settings">
+            <span><?php echo $this->translate('network.options.ajust'); ?></span>
+        </a>
+    </div>
+
+	<form action="/my-network/results/" method="post">
+		<ul class="moods">
+            <?php if ($this->moodCategories) : ?>
+                <?php foreach ($this->moodCategories as $moodCategory) : ?>
+                    <li><span><?php echo htmlspecialchars($moodCategory['category']['name']); ?>:</span>
+		                <ul>
+		                    <?php foreach ($moodCategory['moods'] as $mood) : ?>
+		                    <?php if ($mood->id != Model_Moods::EMPTY_MOOD_ID) : ?>
+			                    <?php
+	                                $class = "";
+	                                $checked = "";
+	                                if (isset($this->userSettings) && isset($this->userSettings->moods)) {
+		                                if (in_array($mood->id,$this->userSettings->moods)) {
+		                                    $class = " class='selected'";
+		                                    $checked = " checked='checked' ";
+		                                }
+	                                }
+			                    ?>
+	                            <li<?php echo $class; ?>>
+						            <input<?php echo $checked; ?> type="checkbox" id="mood_<?php echo $mood->id ?>" name="mood_id[]" value="<?php echo (int)$mood->id ?>" />
+						            <label for="mood_<?php echo $mood->id ?>" title="<?php echo htmlspecialchars($mood->name); ?>" style="background-image: url(/images/moods/mood_<?php echo $mood->id ?>.png);">
+						               <?php echo htmlspecialchars($mood->name); ?></label>
+						        </li>
+					        <?php endif; ?>
+                        <?php endforeach; ?>
+		                </ul>
+		            </li>
+                <?php endforeach; ?>
+            <?php endif; ?>
+		</ul>
+		<ul>
+			<li><span>Options selected:</span>
+				<p></p>
+			</li>
+			<li><span>Include:</span>
+				<ul>
+					<li>
+						<input id="includeType_1" type="radio" name="include_type" value="1" <?php if ($this->userSettings->followings == 1) : ?>checked="checked"<?php endif; ?> />
+						<label for="includeType_1">People I Follow</label>
+					</li>
+					<li>
+						<input id="includeType_2" type="radio" name="include_type" value="2" <?php if ($this->userSettings->followings == 2) : ?>checked="checked"<?php endif; ?> />
+						<label for="includeType_2">People Who Follow Me</label>
+					</li>
+					<li>
+						<input id="includeType_3" type="radio" name="include_type" value="3" <?php if ($this->userSettings->followings == 3) : ?>checked="checked"<?php endif; ?> />
+						<label for="includeType_3">Both</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="buttons">
+			<button type="submit" class="save" name="save" value="save"><span>Save</span></button>
+			<button type="submit" class="cancel" name="cancel" value="cancel"><span>Cancel</span></button>
+		</div>
+	</form>
+</div>

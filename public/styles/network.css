@@ -1,0 +1,295 @@
+#network {
+	border: 1px solid #c2c2c2;
+	padding: 8px;
+	position: relative;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	min-height: 350px;
+}
+
+/**
+ * Empty options
+ */
+#network .empty {
+	padding: 80px 0 100px;
+}
+
+#network .empty h3 {
+	color: #6f6f6f;
+	font-size: 140%;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1em 0;
+}
+
+#network .empty a {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #bfbfbf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #cfcfcf url('../images/button-bg.png') repeat-x;
+	line-height: 28px;
+	height: 28px;
+	padding: 0 10px;
+	color: #6f6f6f;
+	font-size: 140%;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	width: 190px;
+}
+
+/**
+ * Settings form
+ */
+#network form ul {
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+
+#network form ul.moods {
+	padding: 10px 0 0 0;
+}
+
+#network form ul li {
+	list-style: none;
+	margin: 0;
+	padding: 1px 0;
+	overflow: hidden;
+}
+
+#network form ul span {
+	float: left;
+	color: #6f6f6f;
+	font-size: 120%;
+	font-weight: bold;
+	text-align: right;
+	text-transform: uppercase;
+	width: 150px;
+	line-height: 25px;
+	padding: 5px 5px 5px 0;
+}
+
+#network form ul ul {
+	float: left;
+	padding: 0;
+}
+
+#network form ul ul li {
+	float: left;
+	padding: 1px 2px 2px 1px;
+}
+
+#network form ul ul li.selected {
+	background: transparent url('../images/mood-bg.png') no-repeat;
+}
+
+#network form ul.moods input {
+	display: none;
+}
+#network form ul.moods label {
+	display: block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-indent: -1000px;
+	margin: 0;
+	padding: 0;
+}
+
+#network form ul p {
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 17px;
+	padding: 9px 0;
+	margin: 0;
+	width: 500px;
+}
+
+#network form ul input {
+	margin: 5px 5px 5px 0;
+	float: left;
+	height: 25px;
+}
+
+#network form ul label {
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 25px;
+	padding: 5px 0;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+}
+
+#network form .buttons {
+	position: absolute;
+	right: 12px;
+	bottom: 10px;
+}
+
+#network form .buttons button {
+	border: 1px solid #bfbfbf;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #cfcfcf url('../images/button-bg.png') repeat-x;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+#network form .buttons button span {
+	display: block;
+	background-image: url('../images/button-icons.png');
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	line-height: 28px;
+	height: 28px;
+	padding: 0 10px 0 28px;
+	color: #6f6f6f;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+#network form .buttons button.save span {
+	background-position: 0px 0px;
+}
+
+#network form .buttons button.cancel span {
+	background-position: 0px -28px;
+}
+
+/**
+ * Results
+ */
+#network .results {
+	padding: 0;
+	margin: 0;
+}
+
+#network .results li {
+	list-style: none;
+	padding: 5px 0;
+	margin: 0;
+	overflow: hidden;
+	border-top: 1px solid #d3d3d3;
+}
+
+#network .results li:first-child {
+	border: none;
+}
+
+#network .results ul {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 580px;
+}
+
+#network .results ul li {
+	float: left;
+	padding: 0;
+	border: none;
+}
+
+#network .results span {
+	float: left;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	text-indent: -1000px;
+	margin: 0 12px 0 0;
+}
+
+#network .results a {
+	float: left;
+	padding: 5px 0;
+	width: 24px;
+	height: 48px;
+	background: transparent url('../images/network-buttons.png') no-repeat;
+	text-indent: -1000px;
+	overflow: hidden;
+}
+
+#network .results a.prev {
+	background-position: 0px 5px;
+}
+
+#network .results a.prev.disabled {
+	background-position: 0px -43px;
+}
+
+#network .results a.next {
+	background-position: -24px 5px;
+}
+
+#network .results a.next.disabled {
+	background-position: -24px -43px;
+}
+
+#network .results a.more {
+	background-position: -48px 5px;
+}
+
+#network .results a.less {
+	background-position: -72px 5px;
+}
+
+#network .results .expanded a.prev,
+#network .results .expanded a.next {
+	visibility: hidden;
+}
+
+#network .results ul a {
+	padding: 5px;
+	width: 48px;
+	background: none;
+}
+
+#network .results ul img {
+	border: 0;
+	width: 48px;
+	height: 48px;
+	display: block;
+	overflow: hidden;
+}
+
+#network .settings {
+	position: absolute;
+	right: 5px;
+	top: -24px;
+	font-size: 120%;
+	text-transform: uppercase;
+}
+
+#network .settings a {
+	float: left;
+	background: #e1e1e1 url('../images/tabs.png') no-repeat left -64px;
+	padding-left: 10px;
+	color: #6f6f6f;
+	text-decoration: none;
+}
+
+#network .settings a span {
+	float: left;
+	background: transparent url('../images/tabs.png') no-repeat right -96px;
+	height: 15px;
+	line-height: 15px;
+	padding: 5px 10px 3px 0;
+}
+
+#network .settings a.selected {
+	color: #fff;
+	background-position: left -128px;
+}
+
+#network .settings a.selected span {
+	background-position: right -160px;
+}

@@ -1,0 +1,11 @@
+<?php
+$this->headTitle('Update User Avatar');
+?>
+<?php echo $this->message ?>
+<h3>Update user avatar</h3>
+<form name="userLoginForm" id="userLoginForm" action="/admin/index/update-avatar/" method="post">
+<label for="user-login">login
+<input type="text" name="user-login" value="" id="user-login" />
+</label>
+<input type="submit" value="update" />
+</form>

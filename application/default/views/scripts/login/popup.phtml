@@ -1,0 +1,26 @@
+<?php if (!$this->loggedIn) : ?>
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+    $('#loginPopup').loginPopup([
+		'#moodChooser'
+	], {
+        title: '<?php echo $this->translate('popup.login.title'); ?>',
+        buttons: {
+            '<?php echo $this->translate('popup.login.button.cancel'); ?>': function() {
+                $(this).dialog('close');
+            },
+            '<?php echo $this->translate('popup.login.button.login'); ?>': function() {
+                window.location = '/twitter';
+            }
+        }
+    });
+});
+//-->
+</script>
+<div style="display: none;">
+    <div id="loginPopup">
+        <p><?php echo $this->translate('popup.login.body'); ?></p>
+    </div>
+</div>
+<?php endif; ?>

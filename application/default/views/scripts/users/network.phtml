@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * User's network settings page
+ *
+ * @author
+ * @version
+ */
+
+$this->headTitle($this->translate('page.title.network'));
+?>
+
+<div id="network">
+	<form action="" method="POST">
+		<ul class="moods">
+			<li><span>Colors:</span>
+				<ul>
+					<li class="selected">
+						<input type="checkbox" id="mood_11" name="mood_id[]" value="11" />
+						<label for="mood_11" title="Red" style="background-image: url(/images/moods/mood_11.png);">Red</label>
+					</li>
+					<li>
+						<input type="checkbox" id="mood_12" name="mood_id[]" value="12" />
+						<label for="mood_12" title="Red" style="background-image: url(/images/moods/mood_12.png);">Pink</label>
+					</li>
+				</ul>
+			</li>
+			<li><span>Foods &amp; drinks:</span>
+				<ul>
+					<li class="selected">
+						<input type="checkbox" id="mood_13" name="mood_id[]" value="13" />
+						<label for="mood_13" title="Red" style="background-image: url(/images/moods/mood_13.png);">Red</label>
+					</li>
+					<li>
+						<input type="checkbox" id="mood_15" name="mood_id[]" value="15" />
+						<label for="mood_15" title="Red" style="background-image: url(/images/moods/mood_15.png);">Pink</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><span>Options selected:</span>
+				<p>Blue, Red, Pink</p>
+			</li>
+			<li><span>Include:</span>
+				<ul>
+					<li>
+						<input id="includeType_1" type="radio" name="include_type" value="1" checked="checked" />
+						<label for="includeType_1">People I Follow</label>
+					</li>
+					<li>
+						<input id="includeType_2" type="radio" name="include_type" value="2" />
+						<label for="includeType_2">People Who Follow Me</label>
+					</li>
+					<li>
+						<input id="includeType_3" type="radio" name="include_type" value="3" />
+						<label for="includeType_3">Both</label>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="buttons">
+			<button type="submit" class="save" name="save"><span>Save</span></button>
+			<button type="submit" class="cancel" name="cancel"><span>Cancel</span></button>
+		</div>
+	</form>
+</div>

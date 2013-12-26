@@ -1,0 +1,54 @@
+<?php
+
+$total = 0;
+$moodsLabels = array();
+$usedMood = array();
+$usedUnique = array();
+
+foreach ($this->moods as $mood) {
+    $moodsLabels[] = $mood['mood_name'];
+    $usedMood[]    = (int)$mood['used_num'];
+    $usedUnique[]  = (int)$mood['used_unique'];
+}
+
+$total = 0;
+if ($usedMood || $usedUnique)
+    $total = (int)max(array_merge($usedMood, $usedUnique));
+
+$chart = new OFC_Chart();
+
+// graph title
+$title = new OFC_Elements_Title('Moods Statistics');
+$chart->set_title($title);
+$chart->set_bg_colour('#FFFFFF');
+
+// X string labels
+$labels = new OFC_Elements_Axis_X_Label_Set();
+$labels->set_labels($moodsLabels);
+$labels->set_vertical();
+
+// Y number labels
+$y_axis = new OFC_Elements_Axis_Y();
+$y_axis->set_range(0, $total + 10);
+$y_axis->set_grid_colour('#CCCCCC');
+$chart->set_y_axis($y_axis);
+
+// X number labels
+$x_axis = new OFC_Elements_Axis_X();
+$x_axis->set_labels($labels);
+$x_axis->set_grid_colour('#FFFFFF');
+$chart->set_x_axis($x_axis);
+
+// used moods graph
+$usedMoodChart = new OFC_Charts_Bar();
+$usedMoodChart->set_values($usedMood);
+$usedMoodChart->set_colour('#4F6228');
+$chart->add_element($usedMoodChart);
+
+// used unique total graph
+$usedUniqueChart = new OFC_Charts_Bar();
+$usedUniqueChart->set_values($usedUnique);
+$usedUniqueChart->set_colour('#4A7EBB');
+$chart->add_element($usedUniqueChart);
+
+echo $chart->toString();

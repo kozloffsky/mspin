@@ -1,0 +1,63 @@
+<?php
+$this->headTitle('Dashboard');
+?>
+<table style="border: none; width:100%">
+    <tr>
+        <td style="border: none; vertical-align: top; width: 500px;">
+            <ul>
+                <li>
+                    <a href="/admin/index/registered-users">Moodspin users (Active / New)</a>
+                    <span><?php echo $this->registeredUsers; ?> users</span>
+                </li>
+                <li>
+                    <a href="/admin/index/potential-users">Potential users</a>
+                    <span>
+                        <strong><?php echo $this->potentialUsers; ?> people</strong>
+                        Contacted: <?php echo $this->invitedUsers; ?>
+                    </span>
+                </li>
+                <li>
+                    <a href="/admin/index/moods">Moods Statistics</a>
+                </li>
+                <li>
+                    <a href="/admin/index/update-avatar">Update user avatar</a>
+                </li>
+            </ul>
+        </td>
+        <td style="border: none; vertical-align: top;">
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'search',
+              search: 'moodspin.com/ -join_moodspin',
+              interval: 4000,
+              title: '',
+              subject: 'Recent moodspin updates',
+              width: 'auto',
+              height: 500,
+              theme: {
+                shell: {
+                  background: '#00364f',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#ffffff',
+                  color: '#444444',
+                  links: '#1985b5'
+                }
+              },
+              features: {
+                scrollbar: true,
+                loop: false,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: true,
+                behavior: 'default'
+              }
+            }).render().start();
+            </script>
+        </td>
+    </tr>
+</table>

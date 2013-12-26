@@ -1,0 +1,12 @@
+#content #everyone .border {
+	border: 1px solid #c2c2c2;
+	overflow: hidden;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	clear: both;
+}
+
+#content .userlist {
+	width: 519px;
+	float: left;
+}

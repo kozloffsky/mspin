@@ -1,0 +1,131 @@
+<?php
+
+/**
+ * Default home page view
+ *
+ * @author
+ * @version
+ */
+
+$this->headTitle($this->translate('page.title.homepahe'));
+$this->placeholder('tab')->set('hide');
+?>
+
+<!-- appsto.re 20a177b5b4e9262380434639ab228cd3 -->
+<script type="text/javascript">
+<!--
+var demoWindow = null;
+var isHtmlSet = false;
+$(document).ready(function() {
+    $('#demo-movie-popup').dialog({
+        autoOpen: false,
+        title: 'Welcome to moodspin',
+        draggable: false,
+        modal: true,
+        resizable: false,
+        width: '682px'
+    });
+    $('#demo-movie').click(function() {
+        if(!isHtmlSet) {
+            $('#demo-movie-popup').html('<object width="660" height="525">'
+		+ '<param name="movie" value="http://www.youtube.com/v/7xvjSjQaR8s&hl=en_US&fs=1&rel=0&border=1">'
+		+ '</param><param name="allowFullScreen" value="true"></param>'
+		+ '<param name="allowscriptaccess" value="always"></param>'
+		+ '<embed src="http://www.youtube.com/v/7xvjSjQaR8s&hl=en_US&fs=1&rel=0&border=0&autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="660" height="525"></embed>'
+		+ '</object>');
+              isHtmlSet = true;
+          }
+        $('#demo-movie-popup').dialog('open');
+    });
+});
+//-->
+</script>
+
+<div id="demo-movie-popup">
+</div>
+
+<div id="homepage">
+	<h3 class="title">
+        <?php if ($this->unknownUserLogin) : ?>
+		<span>The twitter user <?php echo $this->unknownUserLogin ?> is currently not using moodspin.</span><br />
+		<?php endif; ?>
+		<b>Express how you feel beyond words</b>
+		<i>Add emoticons &amp; colors to your picture. Find how your friends are feeling right now!</i>
+	</h3>
+
+	<div class="panel left">
+        <?php echo $this->action('index', 'status');?>
+		<div class="moodline">
+			<?php if($this->identity): ?>
+			<div class="buttons">
+				<a href="/users/moodline" title="<?php echo $this->translate('content.menu.moodline'); ?>"><?php echo $this->translate('content.menu.moodline'); ?></a>
+				<a href="/my-network/" title="<?php echo $this->translate('content.menu.network'); ?>"><?php echo $this->translate('content.menu.network'); ?></a>
+				<a href="/users/everyone" title="<?php echo $this->translate('content.menu.everyone'); ?>"><?php echo $this->translate('content.menu.everyone'); ?></a>
+			</div>
+			<?php endif; ?>
+			<div class="embeded">
+			    <img id="demo-movie" src="/images/static/demo-movie.jpg" style="width: 400px; height: 300px;" />
+			</div>
+		</div>
+    </div>
+	<div class="panel right">
+		<?php echo $this->action('moodiest', 'top-people');?>
+		<?php echo $this->action('recent', 'status');?>
+	</div>
+	<div class="panel bottom">
+		<div class="iphone">
+			<h4>
+				<a href="/iPhone.html">
+					On-the-Move?
+				</a>
+			</h4>
+			<p>
+				Share your mood with 3 clicks using the moodspin iPhone application.
+			</p>
+		</div>
+		<div class="badge-box">
+			<h4>
+				<a href="/badge/get">
+					Share Everywhere
+				</a>
+			</h4>
+			<a class="screenshot login" href="/badge/get" title="<?php echo $this->translate('mood.chosser.form.getBadge'); ?>"><?php echo $this->translate('mood.chosser.form.getBadge'); ?></a>
+			<p>
+				Use the mood-badge to share your mood everywhere (blogs, iGoogle, facebook, mySpace and more).
+			</p>
+		</div>
+		<div class="facebook">
+		    <a href="http://apps.facebook.com/moodspin/" target="_blank">
+		        <img src="/images/static/facebook-logo.png" class="facebook" />
+		    </a>
+			<h4>
+				<a href="http://apps.facebook.com/moodspin/" target="_blank">
+					Moodspin on Facebook
+				</a>
+			</h4>
+			<p>
+                <span class="fb_profile_connect">
+                    <a style="margin-top:3px;" class="UIButton UIButton_Gray UIActionButton" href="http://www.facebook.com/pages/moodspin/104927371444" target="_blank">
+                        <span class="UIButton_Text">
+                            <span class="UIButton_Icon UIButton_IconNoSpriteMap" style="background-position: 0 -7px;"></span>
+                            Become a Fan
+                        </span>
+                    </a>
+                </span>
+			</p>
+		</div>
+		<div class="twitter">	
+		    <a href="http://www.twitter.com/moodspin" target="_blank">
+		        <img src="/images/static/twitter-logo.png" class="twitter" />
+		    </a>
+			<h4>
+				<a href="http://www.twitter.com/moodspin" target="_blank">
+					Twitter
+				</a>
+			</h4>
+			<p>
+				Follow @moodspin
+			</p>
+		</div>
+	</div>
+</div>

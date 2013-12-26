@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Default error view
+ *
+ * @author
+ * @version
+ */
+
+$this->headTitle($this->title);
+$this->placeholder('title')->set($this->title);
+?>
+
+<?php if ($this->message): ?>
+<p>Oops, something went wrong...<br /> 
+<a href="/">Click here</a> to go back to the homepage.</p>
+<?php
+    if (APPLICATION_ENV != 'production') {
+        echo $this->message;
+    }
+?>
+<?php endif; ?>

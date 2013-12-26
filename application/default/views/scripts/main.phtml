@@ -1,0 +1,114 @@
+<?php
+
+/**
+ * Default Layout
+ *  
+ * @author
+ * @version
+ */
+
+echo $this->doctype('XHTML1_TRANSITIONAL');
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <?php
+        $this->headTitle()->prepend($this->translate('page.title.default'));
+        echo $this->headTitle();
+        echo $this->headLink()->prependStylesheet('/scripts/lib/jquery/css/smoothness/jquery-ui-1.7.2.custom.css')
+                              ->prependStylesheet('/scripts/lib/jquery/css/loadmask/jquery.loadmask.css')
+                              ->prependStylesheet('/styles/default.css')
+                              ->appendStylesheet('/styles/mood.css')
+                              ->appendStylesheet('/styles/cloud.css')
+                              ->appendStylesheet('/styles/topPeople.css')
+                              ->appendStylesheet('/styles/users.css')
+                              ->appendStylesheet('/styles/moodline.css')
+                              ->appendStylesheet('/styles/network.css')
+                              ->appendStylesheet('/styles/news.css')
+                              ->appendStylesheet('/styles/static.css')
+                              ->appendStylesheet('/scripts/lib/jquery/css/tooltip/tooltip.css')
+                              ->appendStylesheet('/styles/ie6.css', 'all', 'lt ie 7')
+                              ->appendStylesheet('/themes.style')
+                                // Kampyle Css
+                              ->appendStylesheet('http://cf.kampyle.com/k_button.css');
+        echo $this->headStyle();
+        echo $this->headScript()->prependFile('/scripts/lib/jquery/jquery-1.3.2.min.js')
+                                ->appendFile('/scripts/lib/jquery/jquery-ui-1.7.2.min.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/jquery.limit-1.2.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/jquery.form.min.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/jquery.loadmask.min.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/jquery.template.js')
+                                ->appendFile('/scripts/app/compiled.js')
+//                                ->appendFile('/scripts/app/moodchooser.js')
+//                                ->appendFile('/scripts/app/moodline.js')
+//                                ->appendFile('/scripts/app/loginpopup.js')
+//                                ->appendFile('/scripts/app/moodselector.js')
+//                                ->appendFile('/scripts/app/network.js')
+//                                ->appendFile('/scripts/app/tooltips.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/qtip/jquery.qtip-1.0.0.min.js')
+                                ->appendFile('/scripts/lib/jquery/plugins/jquery.reject.min.js');
+        ?>
+    </head>
+
+    <body>
+        <?php echo $this->partial('partials/browser-reject.phtml'); ?>
+        <?php echo $this->action('popup', 'login');?>
+        <div id="page">
+            <div id="header">
+                <?php echo $this->pageStatus(); ?>
+                <h1><a href="/"><?php echo $this->translate('page.logo'); ?></a></h1>
+                <h2><?php echo $this->translate('mood.chosser.shareYourMood'); ?></h2>
+                <?php echo $this->action('index', 'navigation'); ?>
+            </div>
+            <div id="wrapper">
+                <div id="content">
+                    <div class="shadow">
+                        <div class="shadow-top">
+                            <div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                        <div class="shadow-left">
+                            <div class="shadow-right">
+                                <div class="body">
+				                    <?php echo $this->action('index', 'status');?>
+                                    <div class="tabs">
+                                    <?php $tab = $this->placeholder('tab'); ?>
+                                    <?php if ($tab != 'hide') : ?>
+                                        <ul>
+                                            <li class="<?php echo ($tab == 'moodline')?'selected':''; ?>"><a href="/users/moodline" title="<?php echo $this->translate('content.menu.moodline'); ?>"><span><?php echo $this->translate('content.menu.moodline'); ?></span></a></li>
+                                            <li class="<?php echo ($tab == 'network')?'selected':''; ?>"><a href="/my-network/" class="right" title="<?php echo $this->translate('content.menu.network'); ?>"><span><?php echo $this->translate('content.menu.network'); ?></span></a></li>
+                                            <li class="<?php echo ($tab == 'everyone')?'selected':''; ?>"><a href="/users/everyone" class="left" title="<?php echo $this->translate('content.menu.everyone'); ?>"><span><?php echo $this->translate('content.menu.everyone'); ?></span></a></li>
+                                        </ul>
+                                    <?php endif; ?>
+                                    </div>
+                                    <?php echo $this->layout()->content; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow-bottom">
+                            <div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php echo $this->action('index', 'news');?>
+                </div>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li><a href="<?php echo $this->url(array(), 'about_us'); ?>"><?php echo $this->translate('footer.menu.aboutUs'); ?></a></li>
+                    <li><a href="http://twitter.com/moodspin" target="_blank"><?php echo $this->translate('footer.menu.twitter'); ?></a></li>
+                    <li><a href="<?php echo $this->url(array(), 'blog'); ?>"><?php echo $this->translate('footer.menu.blog'); ?></a></li>
+                    <li><a href="<?php echo $this->url(array(), 'legal_info'); ?>"><?php echo $this->translate('footer.menu.legalInfo'); ?></a></li>
+                    <li><a href="<?php echo $this->url(array(), 'help'); ?>"><?php echo $this->translate('footer.menu.help'); ?></a></li>
+                </ul>
+                <p><?php echo $this->translate('footer.copyright'); ?></p>
+            </div>
+        </div>
+        <?php echo $this->partial('partials/google-analytics.phtml'); ?>
+        <?php echo $this->partial('partials/kampyle-feedback.phtml'); ?>
+    </body>
+</html>

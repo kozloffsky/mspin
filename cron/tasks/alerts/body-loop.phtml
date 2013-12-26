@@ -1,0 +1,19 @@
+<li style="margin: 0; padding: 0;">
+    <span style="display: block; height:32px; overflow:hidden;">
+        <img style="position: relative; top: -32px; float: left;" src="<?php echo $this->baseUrl; ?>/images/moods/mood_<?php echo $this->data['moodId']; ?>.png" /> 
+        <span style="margin-top:-32px; font-weight: bold; font-size: 180%;text-transform: uppercase; line-height: 32px; color: #646464; padding: 0 0 0 18px; height: 32px;">
+            <?php echo $this->data['moodName']; ?>
+        </span>
+    </span>
+    <ul style="margin: 9px 0; list-style: none; padding: 6px 0 28px; border-top: 1px solid #989898;">
+        <?php foreach ($this->data['users'] as $user) : ?>
+        <li style="position: relative; overflow: hidden; margin: 0; border: none; padding: 7px 6px;">
+            <a href="<?php echo $this->baseUrl; ?>/<?php echo $user['login'] ?>">
+                <img style="overflow: hidden; border: none; display: block; height: 48px; margin-right: 12px; float: left; width: 48px;" src="<?php echo $this->baseUrl; ?><?php echo $user['imgSrc'] ?>" title="<?php echo $user['login'] ?>" alt="<?php echo $user['login'] ?>" />
+            </a>
+            <p style="overflow: hidden; font-size: 120%; margin: 0.3em 0 0; color: #000; height: 2.5em;"><?php echo $user['latest_status_message']; ?></p>
+            <p class="info" style="display: block; overflow: hidden; font-size: 120%; margin: 0.3em 0 0; color: #000; height: 2.5em;"><a style="font-weight: bold; font-size: 110%; margin: 0; color: #508ec2; height: auto;" href="<?php echo $this->baseUrl; ?>/<?php echo $user['login'] ?>" target="_blank"><?php echo $user['login'] ?></a></p>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+</li>
